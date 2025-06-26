@@ -1,5 +1,632 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+:root {
+  --main-font: IBMPlexMono ;
+  --bg-color:#000028;
+  --text-color:#F1B2CE;
+  --accent-color:#FF0070;
+}
+
+
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   margin: auto;
+   width: 1024px;
+   color: var(--text-color,#F1B2CE);
+   font-family:var(--main-font,IBMPlexMono) ;
+   background-color: var(--bg-color,#000028);
 }
+
+
+
+
+header {
+  width: 100%;
+    display: flex;
+    height: 768px;
+    justify-content: flex-start;
+    flex-direction: column;
+     /*border: 1px rgb(41, 102, 160) solid;*/
+     margin: auto;
+  }
+ 
+.decorated-zone {
+  background-size: cover;
+  background-position: center;
+ background-image: url(../images/cover-image-dark.png);
+}
+
+.header__theme-menu-item {
+  display: flex;
+    list-style-type: none;
+    gap: 10px;
+  list-style-type: none;
+  background: none;
+}
+
+
+
+
+.header__theme-menu { 
+ display: flex;
+    justify-content: space-between;
+ }
+
+ 
+.header__theme-menu-list {
+display: flex;
+    gap: 24px;
+    padding-left: 8vh;
+    padding-top: 4px;
+}
+
+.header__theme-menu-button {
+   font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(255, 0, 112, 1);
+  background: none !important ;
+  border: none;
+  
+}
+
+
+.header__theme-menu-button:hover {
+   border: 1px #FF0070 solid;
+   padding: 2px 10px;
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline #FF0070 solid;
+ }
+
+
+.parent_rec { 
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+
+.rec {
+display: flex;
+    text-transform: uppercase;
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    flex-direction: row-reverse;
+     margin: 2vh 0vh 0 0;
+    color: #FF0070;
+
+}
+
+.decorate_sign_right {
+        box-sizing: border-box;
+    width: 25px;
+    height: 30px;
+    border-top: 2px #FF0070 solid;
+    border-right: 2px #FF0070 solid;
+margin: 2vh 2vh 0 0;
+}
+
+.circle {
+
+ 
+}
+
+.parent_focus {
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.heading_focus {
+font-family: var(--main-font,IBMPlexMono);
+font-style: normal;
+  font-weight: 700;
+ font-size: clamp(1.125rem, -3.8947rem + 21.4176vw, 9.8125rem);
+  line-height: 83%;
+color:#DB00FF;
+}
+
+.focus {
+  display: flex;
+   /*border: 1px rgb(41, 69, 160) solid;*/
+   align-items: flex-end;
+   margin: 18vh 0 0 0 ;
+     text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.shadow_text {
+   text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.parent_header_text { 
+ max-width: 491px;
+margin: 0 0 70px 55vh;
+
+}
+
+
+.header_text {
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;
+   border: 1px rgb(160, 41, 41) solid;
+   color:#000028;
+   background: #FF0070;
+}
+
+
+
+
+.decorate_sign {
+    box-sizing: border-box;
+    padding: 10px 0 1px 0px;
+    width: 25px;
+    height: 30px;
+    border-bottom: 2px #FF0070 solid;
+    border-left: 2px #FF0070 solid;
+    margin: 1px 1px 22px 20px;
+}
+
+
+
+
+
+
+
+main {
+  margin: auto;
+  width: 1024px;
+}
+
+.information {
+width: 100%;
+    margin: auto;
+    /*border: 1px rgb(98, 0, 107) solid;*/
+    display: flex;
+    gap: 23.93px;
+    height: 586px;
+    padding-top: 40px;
+}
+
+
+.decorated-zone_maine {
+  background: #000028;
+}
+
+.information_text_parent {
+  width: 314.9599914550781px;
+  height: 47px;
+  padding: 2px 0 0 2vh;
+}
+
+
+.information_text_right {
+  padding: 0px 21px 0 0;
+ }
+
+.information_text {
+font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px; 
+color:#FF0070;
+}
+
+.heading { 
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;
+background: #FF0070;
+color: #000028;
+}
+
+.text_right_parent {
+width: 648.9175415039062px;
+height: 211px;
+}
+
+.content_paragraph {
+  font-family: IBM Plex Mono;
+font-weight: 400;
+font-size: 18px;
+line-height: 23.4px;
+color:#F1B2CE;
+}
+
+
+.heading_parent {
+width: 649px;
+height: 20px;
+background: #FF0070;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.information_lots {  
+  display: flex;
+height: 540px;
+margin: auto;
+/*border: 1px rgb(255, 153, 0) solid;*/
+
+}
+
+
+.lots__heading_parent { 
+  width: 315px;
+height: 47px;
+padding: 2px 0 0 2vh;
+}
+
+
+.lots__heading { 
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;  
+color:#FF0070 ;
+}
+
+.lots_card_right_task_parent {  
+  display: flex;
+  flex-direction: column;
+      padding: 7vh 0 0 2vh;
+}
+
+.lots_card_right_task {
+  width: 315px;
+height: 47px;
+}
+
+
+
+.lots_free_parent {
+   display: flex;
+  flex-direction: column;
+padding: 7vh 0 0 21px;
+
+}
+
+
+
+.card__title {
+  display: flex;
+  flex-direction: row;
+  background: #FF0070;
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;
+letter-spacing: 0%;
+color:#000028 ;
+}
+
+.card__text {
+font-family: IBM Plex Mono;
+font-weight: 400;
+font-size: 18px;
+line-height: 128%;
+letter-spacing: 0%;
+
+}
+
+
+
+.information_list_three { 
+    margin: auto;
+    /*border: 1px rgb(65, 110, 255) solid;*/
+    display: flex;
+    gap: 20px;
+     height: 1115px;
+     padding-top: 1vh;
+}
+
+
+.information_list_text_parent {
+  width: 315px;
+height: 98px;
+padding: 4vh 0 0 2vh;
+
+}
+
+.information_list_text {
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;
+color: #FF0070;
+}
+
+
+.heading_list_right_parent {
+width: 649px;
+height: 20px;
+padding: 4vh 0 0 0;
+
+}
+
+
+
+
+
+
+
+
+.heading_list_right_sky_parent {
+  width: 649px;
+  height: 244px;
+  padding: 2vh 0 0 0;
+}
+
+
+
+.text_right_sky_parent {
+  width: 647.5520629882812px;
+height: 211px;
+}
+
+
+
+.heading_list_right_music_parent {
+    width: 649px;
+  height: 150px;
+  padding: 2vh 0 0 0;
+}
+
+
+
+
+.text_right_music_parent {
+  width: 649px;
+  height: 117px;
+}
+
+
+
+
+.heading_list_right_walk_parent {
+  width: 649px;
+height: 197px;
+padding: 23px 0 0 0;
+}
+
+
+.text_right_walk_parent {
+ width: 649px;
+height: 197px;
+}
+
+
+
+.heading_list_right_good_parent {
+  width: 649px;
+height: 151px;
+padding: 2vh 0 0 0;
+}
+
+.text_right_good_parent {
+  width: 649px;
+height: 118px;
+}
+
+.heading_list_right_read_parent {
+width: 649px;
+height: 150px;
+padding: 2vh 0 0 0;
+
+}
+
+.text_right_read_parent {
+  width: 649px;
+height: 117px;
+}
+
+
+
+
+
+
+
+
+
+.pictures {
+ height: 100%;
+ padding: 0 20px 20px 20px;
+   /*border: 1px rgb(255, 65, 65) solid;*/
+}
+
+.heading_pictures {
+  width: 984px;
+  font-family: IBM Plex Mono;
+font-weight: 700;
+font-size: 18px;
+line-height: 23.4px;
+background: #FF0070;
+color: #000028;
+margin:  32px 0 0 0vh;
+}
+
+
+
+
+.gallery {
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+
+
+
+.image_sunset {
+     grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+}
+
+
+.image_ice-scream {
+grid-row: span 6 / span 6;
+    grid-column-start: 3;
+}
+
+
+.image_books {
+  grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+
+}
+
+.image_tape {
+ grid-row: span 7 / span 7;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+
+.image_street {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 7;
+
+}
+
+.sunset {
+  display: block;
+  width: 650px;
+height: 260px;
+}
+
+.ice-scream {
+  width: 314px;
+  height: 595px;
+  object-fit: cover;
+}
+
+.books {
+width: 315px;
+height: 315px;
+object-fit: contain;
+}
+
+ .the_tape{
+width: 315px;
+height: 768px;
+object-fit: cover;
+}
+
+.the_street {
+width: 649px;
+height: 433px;
+object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: auto;
+    margin: auto;
+    /*border: 1px rgb(251, 255, 0) solid;*/
+    display: flex;
+    height: 798px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background: #000028;
+}
+
+
+
+
+
+
+.decorate_sign_footer_up {
+      box-sizing: border-box;
+    width: 25px;
+    height: 30px;
+    border-top: 1px #FF0070 solid;
+    border-right: 1px #FF0070 solid;
+    margin: 28px 0px 0px 103vh;
+}
+
+
+
+
+.focus_footer_parent {  
+display: flex; 
+    flex-direction: column;
+    height: 83%;
+    justify-content: center;
+    width: 471px;
+    border: 1px rgb(255, 65, 65) solid;
+
+
+}
+
+.focus_footer {
+padding-top: 23px;
+text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+}
+
+
+.decorate_sign_footer {
+      box-sizing: border-box;
+    width: 25px;
+    height: 30px;
+    border-bottom: 1px #FF0070 solid;
+    border-left: 1px #FF0070 solid;
+    margin: 0vh 103vh 0px 0px;
+}
+
