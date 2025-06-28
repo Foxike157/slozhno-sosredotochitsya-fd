@@ -3,11 +3,112 @@
   и их переопределение под различные устройства
 */
 
-/*мобильное  устроиство */
-@media screen (width:768px) {
-  .page{
-    width: auto;
+/*планшет  устроиство */
+@media (max-width: 768px) {
 
+:root {
+   --page-width: 768px;
+   --header-height:1024px;
+}
+
+   .header {
+    height: var( --header-height);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+     margin: auto;
+     max-width: 100%;
   }
   
+  
+  .block {
+    display: none;
+  }
+  .header__theme-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+ .header__theme-menu-list {
+      flex-direction: column;
+      margin: 17vh 3vh 0 0vh
+    }
+
+   .header__theme-menu-item {
+        row-gap;:10px
+    }
+    
+    .parent_rec {
+      margin: 4px 4px 0 0;
+
+    }
+
+   .parent_focus {
+      margin: 0 0 18vh 0;
+   }
+
+
+    .focus {
+     
+
+    }
+
+    .parent_header_text {
+      width: 364px;
+     height: 117px;
+     margin: 0vh 0 139px 385px;
+
+    }
+
+  .header_text {
+    padding: 0 0 0 0;
+  }
+
+ 
+.decorate_sign {
+
 }
+
+.heading_parent {
+  width: 472px;
+height: 23px;
+
+}
+
+
+.text_right_parent {
+  width: 472px;
+height: 314px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .information_text_parent {
+    width: 236px;
+    height: 71px;
+  }
+
+
+  .information_text {
+
+  }
+
+
+}
+
+
+
+
+
