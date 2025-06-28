@@ -78,7 +78,41 @@ height: 23px;
 
 .text_right_parent {
   width: 472px;
-height: 314px;
+height: 278px;
+}
+
+
+.information {
+margin: 0 0 18vh 0;
+}
+
+
+.information_text_parent {
+width: 236px;
+height: 71px;
+padding: 5px 0 0 20px;
+
+}
+
+
+
+.dofamin_block {
+  margin: 0 0 0 0;
+}
+
+.information_lots {
+  flex-direction: column;
+  height:675px;
+margin: 0 0 0 0;
+}
+
+
+
+.lots_free_parent {
+  padding: 0 0 0 0 ;
+}
+
+
 
 
 }
