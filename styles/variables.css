@@ -35,7 +35,7 @@
     }
 
    .header__theme-menu-item {
-        row-gap;:10px
+        row-gap:10px;
     }
     
     .parent_rec {
@@ -97,50 +97,171 @@ padding: 5px 0 0 20px;
 
 
 .dofamin_block {
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .information_lots {
-  flex-direction: column;
-  height:675px;
-margin: 0 0 0 0;
-}
 
-
-
-.lots_free_parent {
-  padding: 0 0 0 0 ;
-}
-
-
-
+ width: 728px;
+height: 675px;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  .information_text_parent {
-    width: 236px;
-    height: 71px;
+.lots__heading_parent{
+  width: 236PX;
+  height: 70PX; 
   }
 
 
-  .information_text {
 
-  }
+.lots__heading {
+width: 236px;
+height: 70px;
+padding: 1vh 0 0 0;
+}
+
+.cards {  
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 0 16vh 0;
+}
+
+.card_one {
+  grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+width: 728px;
+height: 174px;
+
+}
+
+
+
+
+.card_two {
+ grid-column: span 5 / span 5;
+grid-row: span 2 / span 2;
+grid-row-start: 3;
+width: 728px;
+height: 174px;
+
+}
+
+.card_three {
+
+width: 728px;
+height: 197px;
+grid-column: span 5 / span 5;
+grid-row: span 2 / span 2;
+grid-row-start: 5;
+
+}
+
+.information_text_right {
+  width: 472px;
+gap: 20px;
+
+}
+
+.heading_list_right_parent {
+    width: 472px;
+}
+
+.heading_list_right_sky_parent {
+    width: 472px;
+}
+
+.heading_list_right_music_parent {
+ width: 472px;
+}
+
+.heading_list_right_walk_parent {
+ width: 472px;
+}
+
+
+.heading_list_right_good_parent{
+ width: 472px;
+}
+
+.heading_list_right_read_parent {
+ width: 472px;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

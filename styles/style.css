@@ -192,21 +192,22 @@ width: 100%;
     padding-top: 40px;
 }
 
+.information_text_parent {
+width: 314.9599914550781px;
+height: 47px;
+  padding: 2px 0 0 2vh;
+}
 
 .decorated-zone_maine {
   background: #000028;
 }
 
-.information_text_parent {
-  width: 314.9599914550781px;
-  height: 47px;
-  padding: 2px 0 0 2vh;
-}
 
 
-.information_text_right {
-  padding: 0px 20px 0 0;
- }
+
+
+
+
 
 .information_text {
 font-family: 'IBM Plex Mono';
@@ -215,6 +216,7 @@ font-size: 18px;
 line-height: 23.4px; 
 color:#FF0070;
 }
+
 
 .heading { 
   font-family: 'IBM Plex Mono';
@@ -258,18 +260,19 @@ background: #FF0070;
 
 
 .information_lots {  
-  display: flex;
-height: 540px;
+  display: grid;
 margin: auto;
-
-
+width: 1024px;
+height: 526px;
+padding-right: 20px;
+padding-left: 20px;
 }
 
 
 .lots__heading_parent { 
   width: 315px;
 height: 47px;
-padding: 2px 0 0 2vh;
+
 }
 
 
@@ -281,11 +284,18 @@ line-height: 23.4px;
 color:#FF0070 ;
 }
 
-.lots_card_right_task_parent {  
-  display: flex;
-  flex-direction: column;
-      padding: 7vh 0 0 2vh;
+.cards {
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width: 984px;
+height: 431px;
+gap: 20px;
+
 }
+
+
 
 .lots_card_right_task {
   width: 315px;
@@ -294,17 +304,10 @@ height: 47px;
 
 
 
-.lots_free_parent {
-   display: flex;
-  flex-direction: column;
-padding: 7vh 0 0 21px;
-
-}
 
 
-
-.card__title {
-  display: flex;
+.card__title-name {
+ 
   flex-direction: row;
   background: #FF0070;
   font-family: 'IBM Plex Mono';
@@ -326,20 +329,56 @@ letter-spacing: 0%;
 
 
 
+.card_one {
+  width: 315px;
+height: 384px;
+   grid-row: span 5 / span 5;  
+
+} 
+
+.card_two {
+   grid-row: span 5 / span 5;
+    width: 315px;
+height: 361px;
+
+}
+
+
+.card_three {
+  width: 315px;
+height: 431px;
+grid-row: span 5 / span 5;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .information_list_three { 
     margin: auto;
-  
-    display: flex;
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 20px;
      height: 1115px;
-     padding-top: 1vh;
+     padding-top:25px ;
 }
 
 
 .information_list_text_parent {
   width: 315px;
 height: 98px;
-padding: 4vh 0 0 2vh;
+    padding: 35px 0 0 2vh;
+  grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
 
 }
 
@@ -352,10 +391,24 @@ color: #FF0070;
 }
 
 
+.information_text_right_parent_three {
+  grid-column: span 3 / span 3;
+    grid-row: span 10 / span 10;
+    grid-column-start: 3;
+}
+
+.information_text_right_three {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 0 66px 0;
+ }
+
 .heading_list_right_parent {
 width: 649px;
 height: 20px;
-padding: 4vh 0 0 0;
+padding: 34px 0vh 0 0px;
 
 }
 
@@ -369,7 +422,7 @@ padding: 4vh 0 0 0;
 .heading_list_right_sky_parent {
   width: 649px;
   height: 244px;
-  padding: 2vh 0 0 0;
+grid-column: span 5 / span 5;
 }
 
 
@@ -384,7 +437,8 @@ height: 211px;
 .heading_list_right_music_parent {
     width: 649px;
   height: 150px;
-  padding: 2vh 0 0 0;
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
 }
 
 
@@ -401,7 +455,8 @@ height: 211px;
 .heading_list_right_walk_parent {
   width: 649px;
 height: 197px;
-padding: 23px 0 0 0;
+    grid-column: span 5 / span 5;
+    grid-row-start: 3;
 }
 
 
@@ -415,7 +470,8 @@ height: 197px;
 .heading_list_right_good_parent {
   width: 649px;
 height: 151px;
-padding: 2vh 0 0 0;
+   grid-column: span 5 / span 5;
+    grid-row-start: 4;
 }
 
 .text_right_good_parent {
@@ -426,8 +482,8 @@ height: 118px;
 .heading_list_right_read_parent {
 width: 649px;
 height: 150px;
-padding: 2vh 0 0 0;
-
+  grid-column: span 5 / span 5;
+    grid-row-start: 5;
 }
 
 .text_right_read_parent {
