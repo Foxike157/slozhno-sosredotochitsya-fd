@@ -24,14 +24,16 @@
   .block {
     display: none;
   }
+
   .header__theme-menu {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
   }
+
  .header__theme-menu-list {
       flex-direction: column;
-      margin: 17vh 3vh 0 0vh
+      margin: 18vh 3vh 0 0vh
     }
 
    .header__theme-menu-item {
@@ -44,24 +46,26 @@
     }
 
    .parent_focus {
-      margin: 0 0 18vh 0;
+      margin: 0 ;
    }
 
 
     .focus {
+    margin: 0;
      
 
     }
 
     .parent_header_text {
-      width: 364px;
-     height: 117px;
-     margin: 0vh 0 139px 385px;
+    margin: 0 0 9vh 49vh ;
 
     }
 
   .header_text {
     padding: 0 0 0 0;
+      width: 364px;
+     height: 117px;
+     margin: 0vh 0 72px 0px;
   }
 
  
@@ -82,9 +86,6 @@ height: 278px;
 }
 
 
-.information {
-margin: 0 0 18vh 0;
-}
 
 
 .information_text_parent {
@@ -100,12 +101,7 @@ padding: 5px 0 0 20px;
   margin: 0;
 }
 
-.information_lots {
 
- width: 728px;
-height: 675px;
-
-}
 
 .lots__heading_parent{
   width: 236PX;
@@ -117,14 +113,14 @@ height: 675px;
 .lots__heading {
 width: 236px;
 height: 70px;
-padding: 1vh 0 0 0;
+padding: 4vh 0 0 0;
 }
 
 .cards {  
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 20px;
-  padding: 0 0 16vh 0;
+  padding: 0 0 11vh 0;
 }
 
 .card_one {
@@ -161,35 +157,191 @@ grid-row-start: 5;
   width: 472px;
 gap: 20px;
 
+
 }
+
+.heading_top {
+  width: 472px;
+height: 23px;
+margin: 3vh 0 0 20px;
+
+}
+
+.information_text_right_three {
+   padding: 0 39px 0 0;
+  
+}
+   
+.information_list_text_parent {
+  padding: 7px 0 0 0vh;
+}
+
 
 .heading_list_right_parent {
     width: 472px;
+    margin: 9px 0 0 0;
 }
 
 .heading_list_right_sky_parent {
     width: 472px;
+    height: 314px;
 }
 
 .heading_list_right_music_parent {
- width: 472px;
+width: 472px;
+height: 198px;
 }
 
 .heading_list_right_walk_parent {
- width: 472px;
+width: 472px;
+height: 290px;
+
 }
 
 
 .heading_list_right_good_parent{
  width: 472px;
+height: 197px;
+
+
 }
 
 .heading_list_right_read_parent {
- width: 472px;
+width: 472px;
+height: 175px;
+
+
 }
 
+.text_right_sky_parent {
+width: 472px;
+height: 280.1079406738281px;
+
+
+}
     
 
+.text_right_music_parent {
+width: 472px;
+height: 164px;
+
+}
+
+
+.text_right_walk_parent {
+width: 472px;
+height: 257.1134033203125px;
+
+
+}
+
+
+.text_right_good_parent {
+width: 472px;
+height: 163.17172241210938px;
+
+}
+
+
+.text_right_read_parent {
+ width: 472px;
+height: 141px;
+}
+
+
+
+.information_list_three {
+  width: 768px;
+height: 1296px;
+top: 2567px;
+padding-right: 20px;
+padding-left: 20px;
+margin-top:10vh ;
+
+}
+
+
+
+.pictures {
+  width: 728px;
+height: 823px;
+margin: 13vh 0 0 0;
+
+}
+
+.heading_pictures {
+  width: 728px;
+height: 23px;
+
+}
+.sunset {
+width: 479.00006103515625px;
+height: 192px;
+
+
+}
+
+
+.ice-scream {
+width: 229px;
+height: 442px;
+
+}
+
+.books {
+  width: 230.00001525878906px;
+height: 230px;
+}
+
+.the_tape {
+width: 229px;
+height: 568px;
+
+
+
+}
+
+.the_street {
+width: 479px;
+height: 318px;
+}
+
+
+footer {
+  width: 768px;
+
+}
+
+.decorate_sign_footer_up_parent {
+margin: 0 0vh 4px 33vh;
+}
+
+.decorate_sign_footer_up {
+margin: 6vh 0 0 90vh;
+}
+
+.decorate_sign_footer {
+margin: 34vh 0 0 128px;
+  
+}
+.focus_footer_parent {
+
+}
+
+
+.decorate_sign_footer_parent {
+
+}
+
+
+
+.focus_footer {
+padding: 40vh 0 0 50px;
+  
+}
+
+
+}
 
 
 
@@ -200,6 +352,184 @@ gap: 20px;
 
 
 
+@media  (max-width: 375px) {
+
+
+
+:root {
+   --page-width: 365px;
+   --header-height:668px;
+}
+
+   .header {
+    height: var( --header-height);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+     margin: auto;
+     max-width: 100%;
+  }
+
+  .page {
+    width: var(--page-width);
+
+  }
+
+
+.block {
+    display: none;
+  }
+
+
+  .parent_rec {
+
+  }
+
+  .header__theme-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+.header__theme-menu-list {
+width: 70px;
+height: 98px;
+margin: 2vh 0vh 0 0vh;
+
+}
+
+.parent_focus {
+  width: 355px;
+height: 192px;
+}
+
+.focus { 
+margin: 16vh 0 0 1vh;
+}
+
+.parent_header_text {
+  margin: 15vh 0 0vh 1vh;
+}
+
+.header_text {
+  width: 355px;
+height: 117px;
+
+}
+
+.decorate_sign {
+
+}
+
+
+
+.information {
+width: 375px;
+height: 949px;
+display: flex;
+flex-direction: column;
+padding: 14px 0 0 4px;
+margin: 0 0 0 0;
+
+} 
+
+.content_title {
+  margin: 8px 0 0px 0;
+}
+
+
+.information_text_parent {
+  width: 355px;
+height: 47px;
+padding: 12px 0 0 0;
+
+
+}
+
+
+.heading_parent {
+  width: 355px;
+  height: 23px;
+
+}
+
+
+
+.text_right_parent {
+  width: 351.0270690917969px;
+  height: 398px;
+
+}
+
+
+.information_lots {
+display: flex;
+width: 375px;
+height: 1119px;
+flex-direction: column;
+padding: 9vh 0 0 0;
+
+}
+
+
+.lots__heading_parent {
+  width: 355px;
+height: 47px;
+}
+
+.lots__heading {
+
+width: 355px;
+height: 47px;
+margin: 0;
+padding: 0 0 0 0px;
+
+}
+
+
+    .cards {
+    display: flex;;
+    flex-direction: column;
+    gap: 161px;
+    }
+
+.card_one  .card_three {
+  margin: 3vh 0 0 4px;
+width: 355px;
+}
+
+.card_two.card_one {
+  margin: 3vh 0 0 4px;
+height: 314px;
+}
+
+.card_three {
+ height: 384px;
+} 
+
+
+.сard__text_one {
+width: 355px;
+height: 281px;
+}
+
+
+.сard__text_two {
+width: 354.9990234375px;
+height: 281px;
+}
+
+
+.сard__text_three {
+width: 355px;
+height: 351px;
+}
+
+.card__title-name  {
+  width: 355px;
+height: 24px;
+
+}
 
 
 
@@ -207,22 +537,52 @@ gap: 20px;
 
 
 
+.information_list_three {
+display: flex;
+flex-direction: column;
+padding: 0;
+margin: 4vh 0 0 1vh;
+
+}
 
 
 
+.heading_top {
+  width: 355px;
+height: 47px;
+
+}
+
+.text_right_sky_parent {
+width: 354.8390808105469px;
+height: 375px;
+}
+
+.text_right_music_parent { 
+width: 355px;
+height: 211px;
+}
+
+.text_right_walk_parent { 
+  width: 353.50238037109375px;
+height: 351px;
+}
+
+.text_right_good_parent {
+  width: 355px;
+height: 211px;
 
 
+}
 
+.text_right_read_parent {
+width: 355px;
+height: 187px;
+}
 
-
-
-
-
-
-
-
-
-
+.content_paragraph {
+margin: 0;
+}
 
 
 
@@ -235,9 +595,6 @@ gap: 20px;
 
 
 }
-
-
-
 
 
 
