@@ -9,6 +9,7 @@
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
+  
 }
 
 
@@ -70,21 +71,21 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  color: rgba(255, 0, 112, 1);
+  color: var(--accent-color);
   background: none !important;
   border: none;
 
 }
 
 .header__theme-menu-button:hover {
- border: 1px #FF0070 solid;
+ border: 1px var(--accent-color) solid;
     padding: 70 0;
     height: 26px;
     width: 70px;
 }
 
-.header__theme-menu-button:focus {
-  text-decoration: underline #FF0070 solid;
+.header__theme-menu-button:focus, .header__theme-menu-button:active {
+  text-decoration: underline var(--accent-color) solid;
 }
 
 .parent_rec {
@@ -102,15 +103,15 @@ header {
   line-height: 25px;
   flex-direction: row-reverse;
   margin: 2vh 4px 0 0;
-  color: #FF0070;
+  color: var(--accent-color);
 }
 
 .decorate_sign_right {
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-top: 2px #FF0070 solid;
-  border-right: 2px #FF0070 solid;
+  border-top: 2px var(--accent-color) solid;
+  border-right: 2px var(--accent-color) solid;
   margin: 2vh 2vh 0 0;
 }
 
@@ -118,10 +119,10 @@ header {
 position: absolute;
     width: 9px;
     height: 9px;
-    margin: 1vh 0 0 1vh;
+   margin: 7px 0 0 7px;
     border-radius: 9px;
-    background: #FF0070;
-    box-shadow: 0px 0px 4px 2px #FF0070;
+    background: var(--accent-color);
+    box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .parent_focus {

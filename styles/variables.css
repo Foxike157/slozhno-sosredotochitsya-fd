@@ -3,6 +3,12 @@
   и их переопределение под различные устройства
 */
 
+:root {
+  /* Переменные тёмной темы */
+
+  
+}
+
 /*планшет  устроиство */
 @media (max-width: 768px) {
 
@@ -101,7 +107,9 @@ padding: 5px 0 0 20px;
   margin: 0;
 }
 
-
+.information_lots {
+  margin: 15vh 0 0 0;
+}
 
 .lots__heading_parent{
   width: 236PX;
@@ -120,7 +128,7 @@ padding: 4vh 0 0 0;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 20px;
-  padding: 0 0 11vh 0;
+  padding: 6vh 0 11vh 0;
 }
 
 .card_one {
@@ -256,7 +264,7 @@ height: 1296px;
 top: 2567px;
 padding-right: 20px;
 padding-left: 20px;
-margin-top:10vh ;
+margin-top: 29vh;
 
 }
 
@@ -382,7 +390,7 @@ padding: 40vh 0 0 50px;
 
 
   .parent_rec {
-
+margin: 0px 0px 4px 0;
   }
 
   .header__theme-menu {
@@ -398,13 +406,18 @@ margin: 2vh 0vh 0 0vh;
 
 }
 
+
+.header__theme-menu-item {
+
+}
+
 .parent_focus {
   width: 355px;
 height: 192px;
 }
 
 .focus { 
-margin: 16vh 0 0 1vh;
+margin: 19vh 0 0 1vh;
 }
 
 .parent_header_text {
@@ -414,11 +427,12 @@ margin: 16vh 0 0 1vh;
 .header_text {
   width: 355px;
 height: 117px;
+margin: 3vh 0 0 0;
 
 }
 
 .decorate_sign {
-
+margin: 30px 0 0 10px;
 }
 
 
@@ -428,7 +442,7 @@ width: 375px;
 height: 949px;
 display: flex;
 flex-direction: column;
-padding: 14px 0 0 4px;
+padding: 14px 10px 0px 10px;
 margin: 0 0 0 0;
 
 } 
@@ -467,7 +481,8 @@ display: flex;
 width: 375px;
 height: 1119px;
 flex-direction: column;
-padding: 9vh 0 0 0;
+padding: 5vh 0 0 10px;
+margin: 6vh 0 0 0;
 
 }
 
@@ -487,10 +502,21 @@ padding: 0 0 0 0px;
 }
 
 
+
+.information_list_text {
+  width: 355px;
+height: 70px;
+left: 10px;
+
+}
+
+
+
     .cards {
     display: flex;;
     flex-direction: column;
     gap: 161px;
+    padding: 0;
     }
 
 .card_one  .card_three {
@@ -542,6 +568,55 @@ display: flex;
 flex-direction: column;
 padding: 0;
 margin: 4vh 0 0 1vh;
+width: 375px;
+height: 1737px;
+top: 2876px;
+
+
+
+}
+
+.heading_list_right_parent {
+  width: 355px;
+height: 23px;
+top: 67px;
+
+}
+
+
+
+
+
+.heading_list_right_sky_parent {
+width: 355.0001220703125px;
+height: 408px;
+
+}
+
+.heading_list_right_music_parent {
+width: 355px;
+height: 244px;
+
+}
+
+.heading_list_right_walk_parent {
+width: 355px;
+height: 384px;
+}
+
+
+
+.heading_list_right_good_parent{
+width: 355px;
+height: 244px;
+
+
+
+}
+
+.heading_list_right_read_parent {
+width: 355px;
+height: 220px;
 
 }
 
@@ -550,6 +625,7 @@ margin: 4vh 0 0 1vh;
 .heading_top {
   width: 355px;
 height: 47px;
+margin: 2vh 0 0 3px;
 
 }
 
@@ -581,8 +657,146 @@ height: 187px;
 }
 
 .content_paragraph {
-margin: 0;
+margin: revert-layer;
 }
+
+
+
+.information_text_right {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 2vh
+}
+
+
+
+.pictures {
+  width: 375px;
+height: 1400px;
+padding-right: 10px;
+padding-left: 10px;
+margin: 12vh 0 0 0;
+
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px 0 0 0;
+}
+
+
+.heading_pictures {
+width: 354.9991760253906px;
+height: 24px;
+left: 10px;
+}
+
+.sunset {
+width: 354.9991760253906px;
+height: 142px;
+top: 34px;
+left: 10px;
+
+
+
+}
+
+
+.ice-scream {
+  width: 354.9991760253906px;
+height: 355px;
+top: 186px;
+left: 10px;
+
+}
+
+.books {
+width: 354.9991760253906px;
+height: 355px;
+top: 798px;
+left: 10px;
+
+
+}
+
+.the_tape {
+width: 355px;
+height: 237px;
+top: 551px;
+left: 10px;
+}
+
+
+
+
+.the_street {
+width: 354.9991760253906px;
+height: 237px;
+top: 1163px;
+left: 10px;
+
+
+}
+
+
+
+.image_sunset {
+
+}
+
+.image_tape {
+
+}
+
+.image_ice-scream {
+
+}
+
+.image_books {
+
+}
+
+.image_street {
+
+} 
+
+
+
+
+footer {
+  width: 375px;
+height: 668px;
+padding: 0 10px 0 10px ;
+
+}
+
+.focus_footer {
+ padding: 5vh 0 0 65px;
+  line-height: 83%;
+} 
+
+.heading_focus {
+  font-size: 116px;
+}
+
+.decorate_sign_footer_up_parent {
+margin: 0 0 0 16vh;
+}
+
+.decorate_sign_footer_up {
+margin: 17px 0 0 90vh;
+}
+
+.decorate_sign_footer {
+margin: 18px 0 0 324px;
+}
+
+
+
+
 
 
 
