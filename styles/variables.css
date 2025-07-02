@@ -2,10 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-
 :root {
-
-  --bg-color: #000028;
+  /* Переменные тёмной темы */
+ --bg-color: #000028;
   --bg-heading: #ff0070;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
@@ -13,20 +12,23 @@
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
 }
+  
 
 
 /*планшет  устроиство */
-@media (max-width:  768px) {
-  :root {
-    --page-width: 768px ;
-    --header-height: 1024px;
-  }
+/*@media (max-width: 768px) {
 
-  .page {
-    
-  }
+:root {
+   --page-width: 768px;
+   --header-height:1024px;
+}
 
-  .header {
+
+.page {
+width: 768px;
+}
+
+   .header {
     height: var(--header-height);
     display: flex;
     justify-content: flex-start;
@@ -63,11 +65,11 @@
   }
 
   .focus {
-    margin: 0;
+  margin: 0 0 2% 0;
   }
 
   .parent_header_text {
-    margin: 0 0 9vh 49vh;
+    margin: 0 0 71px 50%;
   }
 
   .header_text {
@@ -95,12 +97,17 @@
     padding: 5px 0 0 20px;
   }
 
+.information_list_text {
+  margin: 5% 0 0 0 ;
+}
+
   .dofamin_block {
     margin: 0;
   }
 
   .information_lots {
-    margin: 15vh 0 0 0;
+    margin: 14vh 0 0 0;
+    width: 768px;
   }
 
   .lots__heading_parent {
@@ -119,6 +126,7 @@
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
     padding: 6vh 0 11vh 0;
+    width: 768px;
   }
 
   .card_one {
@@ -152,7 +160,7 @@
   .heading_top {
     width: 472px;
     height: 23px;
-    margin: 3vh 0 0 20px;
+    margin: 3% 0 0 20px;
   }
 
   .information_text_right_three {
@@ -160,7 +168,7 @@
   }
 
   .information_list_text_parent {
-    padding: 7px 0 0 0vh;
+    padding:  0;
   }
 
   .heading_list_right_parent {
@@ -219,7 +227,6 @@
   }
 
   .information_list_three {
-    width: 768px;
     height: 1296px;
     top: 2567px;
     padding-right: 20px;
@@ -230,7 +237,7 @@
   .pictures {
     width: 728px;
     height: 823px;
-    margin: 13vh 0 0 0;
+  margin: 11vh 0 0 0;
   }
 
   .heading_pictures {
@@ -264,58 +271,82 @@
 
   footer {
     width: 768px;
+    height: 1024px;
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 0 0vh 4px 33vh;
+    margin: 0 0vh 0px 0;
+    width: 768px;
+   
   }
 
   .decorate_sign_footer_up {
-    margin: 6vh 0 0 90vh;
+    margin: 28px 0 0 44rem;
+    
   }
 
+
+.decorate_sign_footer_parent {
+  width: 768px; 
+  
+}
+
+
   .decorate_sign_footer {
-    margin: 34vh 0 0 128px;
+margin: 60px 0 0 0px;
   }
 
 
 
 
   .focus_footer {
-    padding: 40vh 0 0 50px;
+    padding: 10vh 0 0 50px;
   }
+
+
 }
 
+*/
 
 
 
 
 
-@media (max-width: 375px) {
-  :root {
-    --page-width: 365px;
-    --header-height: 668px;
-  }
 
-  .header {
-    height: var(--header-height);
+
+
+@media  (max-width: 375px) {
+
+
+
+:root {
+   --page-width: 375px;
+   --header-height:668px;
+}
+
+   .header {
+    height: var( --header-height);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: auto;
-    max-width: 100%;
+     margin: auto;
+     max-width: 100%;
   }
 
   .page {
     width: var(--page-width);
+
   }
 
-  .block {
+
+.block {
     display: none;
   }
 
+
   .parent_rec {
-    margin: 0px 0px 4px 0;
+margin: 0px 0px 4px 0;
+
   }
 
   .header__theme-menu {
@@ -324,298 +355,433 @@
     align-items: flex-end;
   }
 
-  .header__theme-menu-list {
-    width: 70px;
-    height: 98px;
-    margin: 2vh 0vh 0 0vh;
-  }
+.header__theme-menu-list {
+display: flex;
+width: 70px;
+height: 98px;
+margin: 2vh 0vh 0 0vh;
+flex-direction: column;
 
-
-  .parent_focus {
-    width: 355px;
-    height: 192px;
-  }
-
-  .focus {
-    margin: 19vh 0 0 1vh;
-  }
-
-  .parent_header_text {
-    margin: 15vh 0 0vh 1vh;
-  }
-
-  .header_text {
-    width: 355px;
-    height: 117px;
-    margin: 3vh 0 0 0;
-  }
-
-  .decorate_sign {
-    margin: 30px 0 0 10px;
-  }
-
-  .information {
-    width: 375px;
-    height: 949px;
-    display: flex;
-    flex-direction: column;
-    padding: 14px 10px 0px 10px;
-    margin: 0 0 0 0;
-  }
-
-  .content_title {
-    margin: 8px 0 0px 0;
-  }
-
-  .information_text_parent {
-    width: 355px;
-    height: 47px;
-    padding: 12px 0 0 0;
-  }
-
-  .heading_parent {
-    width: 355px;
-    height: 23px;
-  }
-
-  .text_right_parent {
-    width: 351.0270690917969px;
-    height: 398px;
-  }
-
-  .information_lots {
-    display: flex;
-    width: 375px;
-    height: 1119px;
-    flex-direction: column;
-    padding: 5vh 0 0 10px;
-    margin: 6vh 0 0 0;
-  }
-
-  .lots__heading_parent {
-    width: 355px;
-    height: 47px;
-  }
-
-  .lots__heading {
-    width: 355px;
-    height: 47px;
-    margin: 0;
-    padding: 0 0 0 0px;
-  }
-
-  .information_list_text {
-    width: 355px;
-    height: 70px;
-    left: 10px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 161px;
-    padding: 0;
-  }
-
-  .card_one .card_three {
-    margin: 3vh 0 0 4px;
-    width: 355px;
-  }
-
-  .card_two.card_one {
-    margin: 3vh 0 0 4px;
-    height: 314px;
-  }
-
-  .card_three {
-    height: 384px;
-  }
-
-  .сard__text_one {
-    width: 355px;
-    height: 281px;
-  }
-
-  .сard__text_two {
-    width: 354.9990234375px;
-    height: 281px;
-  }
-
-  .сard__text_three {
-    width: 355px;
-    height: 351px;
-  }
-
-  .card__title-name {
-    width: 355px;
-    height: 24px;
-  }
-
-  .information_list_three {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 4vh 0 0 1vh;
-    width: 375px;
-    height: 1737px;
-    top: 2876px;
-  }
-
-  .heading_list_right_parent {
-    width: 355px;
-    height: 23px;
-    top: 67px;
-  }
-
-  .heading_list_right_sky_parent {
-    width: 355.0001220703125px;
-    height: 408px;
-  }
-
-  .heading_list_right_music_parent {
-    width: 355px;
-    height: 244px;
-  }
-
-  .heading_list_right_walk_parent {
-    width: 355px;
-    height: 384px;
-  }
-
-  .heading_list_right_good_parent {
-    width: 355px;
-    height: 244px;
-  }
-
-  .heading_list_right_read_parent {
-    width: 355px;
-    height: 220px;
-  }
-
-  .heading_top {
-    width: 355px;
-    height: 47px;
-    margin: 2vh 0 0 3px;
-  }
-
-  .text_right_sky_parent {
-    width: 354.8390808105469px;
-    height: 375px;
-  }
-
-  .text_right_music_parent {
-    width: 355px;
-    height: 211px;
-  }
-
-  .text_right_walk_parent {
-    width: 353.50238037109375px;
-    height: 351px;
-  }
-
-  .text_right_good_parent {
-    width: 355px;
-    height: 211px;
-  }
-
-  .text_right_read_parent {
-    width: 355px;
-    height: 187px;
-  }
-
-  .content_paragraph {
-    margin: revert-layer;
-  }
-
-  .information_text_right {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 2vh;
-  }
-
-  .pictures {
-    width: 375px;
-    height: 1400px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 12vh 0 0 0;
-  }
-
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 5px 0 0 0;
-  }
-
-  .heading_pictures {
-    width: 354.9991760253906px;
-    height: 24px;
-    left: 10px;
-  }
-
-  .sunset {
-    width: 354.9991760253906px;
-    height: 142px;
-    top: 34px;
-    left: 10px;
-  }
-
-  .ice-scream {
-    width: 354.9991760253906px;
-    height: 355px;
-    top: 186px;
-    left: 10px;
-  }
-
-  .books {
-    width: 354.9991760253906px;
-    height: 355px;
-    top: 798px;
-    left: 10px;
-  }
-
-  .the_tape {
-    width: 355px;
-    height: 237px;
-    top: 551px;
-    left: 10px;
-  }
-
-  .the_street {
-    width: 354.9991760253906px;
-    height: 237px;
-    top: 1163px;
-    left: 10px;
-  }
-
-
-
-  footer {
-    width: 375px;
-    height: 668px;
-    padding: 0 10px 0 10px;
-  }
-
-  .focus_footer {
-    padding: 5vh 0 0 65px;
-    line-height: 83%;
-  }
-
-  .heading_focus {
-    font-size: 116px;
-  }
-
-  .decorate_sign_footer_up_parent {
-    margin: 0 0 0 16vh;
-  }
-
-  .decorate_sign_footer_up {
-    margin: 17px 0 0 90vh;
-  }
-
-  .decorate_sign_footer {
-    margin: 18px 0 0 324px;
-  }
 }
+
+
+.header__theme-menu-item {
+
+}
+
+.parent_focus {
+  width: 355px;
+height: 192px;
+margin: 12% 0 0 1%;
+}
+
+.focus { 
+margin: 19vh 0 0 1vh;
+}
+
+.parent_header_text {
+  margin: 13% 0 0vh 2%;
+}
+
+.header_text {
+  width: 355px;
+height: 117px;
+margin: 4vh 0 0 0;
+
+}
+
+.decorate_sign {
+margin: 30px 0 0 10px;
+}
+
+
+
+.information {
+width: 375px;
+height: 949px;
+display: flex;
+flex-direction: column;
+padding: 14px 10px 0px 10px;
+margin: 0 0 0 0;
+
+} 
+
+.content_title {
+  margin: 8px 0 0px 0;
+}
+
+
+.information_text_parent {
+  width: 355px;
+height: 47px;
+padding: 12px 0 0 0;
+
+
+}
+
+
+.heading_parent {
+  width: 355px;
+  height: 23px;
+
+}
+
+.heading {
+
+
+}
+
+
+.text_right_parent {
+  width: 351.0270690917969px;
+  height: 398px;
+
+}
+
+
+.information_lots {
+display: flex;
+width: 375px;
+height: 1119px;
+flex-direction: column;
+padding: 5vh 0 0 10px;
+margin: 11% 0 0 0;
+
+}
+
+
+.lots__heading_parent {
+  width: 355px;
+height: 47px;
+}
+
+.lots__heading {
+
+width: 355px;
+height: 47px;
+margin: 0;
+padding: 0 0 0 0px;
+
+}
+
+
+
+.information_list_text {
+  width: 355px;
+height: 70px;
+left: 10px;
+margin: auto;
+
+}
+
+
+.information_list_text_parent {
+  padding: 3% 0 0 0vh;
+}
+
+
+
+
+
+
+    .cards {
+    display: flex;;
+    flex-direction: column;
+    padding: 0;
+    width: 355px;
+height: 1052px;
+
+
+    }
+
+.card_one,  .card_three {
+width: 355px;
+}
+
+.card_one{
+  height:314px;
+  margin: 3% 0 0 0;
+}
+.card_two,.card_one {
+height: 314px;
+}
+
+.card_two {
+  margin: 3% 0 0 0;
+}
+
+
+.card_three {
+ height: 384px;
+ MARGIN: 3% 0 0 0;
+} 
+
+
+.card__text  {
+  line-height: 134%;
+}
+
+
+
+
+.сard__text_one {
+width: 355px;
+height: 281px;
+margin: auto;
+}
+
+
+.сard__text_two {
+width: 354.9990234375px;
+height: 281px;
+margin: 0;
+}
+
+
+.сard__text_three {
+width: 355px;
+height: 351px;
+margin: auto;
+}
+
+.card__title-name  {
+  width: 355px;
+height: 24px;
+margin: 0;
+}
+
+
+
+
+
+
+
+.information_list_three {
+display: flex;
+flex-direction: column;
+padding: 0;
+margin: 4vh 0 0 1vh;
+width: 375px;
+height: 1737px;
+top: 2876px;
+
+}
+
+
+
+
+.information_text_right_three {
+
+}
+
+
+.heading_list_right_parent {
+  width: 355px;
+height: 23px;
+top: 67px;
+
+}
+
+
+
+
+
+.heading_list_right_sky_parent {
+width: 355.0001220703125px;
+height: 408px;
+
+}
+
+.heading_list_right_music_parent {
+width: 355px;
+height: 244px;
+
+}
+
+.heading_list_right_walk_parent {
+width: 355px;
+height: 384px;
+}
+
+
+
+.heading_list_right_good_parent{
+width: 355px;
+height: 244px;
+
+
+
+}
+
+.heading_list_right_read_parent {
+width: 355px;
+height: 220px;
+
+}
+
+
+
+.heading_top {
+  width: 355px;
+height: 47px;
+margin: 6vh 0 0 3px;
+
+}
+
+.text_right_sky_parent {
+width: 354.8390808105469px;
+height: 375px;
+}
+
+.text_right_music_parent { 
+width: 355px;
+height: 211px;
+}
+
+.text_right_walk_parent { 
+  width: 353.50238037109375px;
+height: 351px;
+}
+
+.text_right_good_parent {
+  width: 355px;
+height: 211px;
+
+
+}
+
+.text_right_read_parent {
+width: 355px;
+height: 187px;
+}
+
+.content_paragraph {
+margin: revert-layer;
+}
+
+
+
+.information_text_right {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 20px;
+  width: 375px;
+
+}
+
+
+
+.pictures {
+  width: 375px;
+height: 1400px;
+padding-left: 10px;
+margin: 69px 0 0 0;
+
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px 0 0 0;
+}
+
+
+.heading_pictures {
+width: 354.9991760253906px;
+height: 24px;
+left: 10px;
+}
+
+.sunset {
+width: 354.9991760253906px;
+height: 142px;
+top: 34px;
+left: 10px;
+
+
+
+}
+
+
+.ice-scream {
+  width: 354.9991760253906px;
+height: 355px;
+top: 186px;
+left: 10px;
+
+}
+
+.books {
+width: 354.9991760253906px;
+height: 355px;
+top: 798px;
+left: 10px;
+
+
+}
+
+.the_tape {
+width: 355px;
+height: 237px;
+top: 551px;
+left: 10px;
+}
+
+
+
+
+.the_street {
+width: 354.9991760253906px;
+height: 237px;
+top: 1163px;
+left: 10px;
+
+
+}
+
+footer {
+  width: 375px;
+height: 668px;
+padding: 0 10px 0 10px ;
+
+}
+
+.focus_footer {
+ padding: 13vh 0 0 16px;
+  line-height: 83%;
+} 
+
+.heading_focus {
+  font-size: 116px;
+margin: 13% 0 0 4%;
+padding: 0;
+}
+
+.decorate_sign_footer_up_parent {
+margin: 0% 0 0 0%;
+width: 375px;
+}
+
+.decorate_sign_footer_up {
+  margin: 42px 0 0 88%;
+}
+
+.decorate_sign_footer {
+margin: 28px 0 0 0px;
+}
+
+.focus_footer_parent{
+  width: 375px;
+  margin: 0 0% 0% 0;
+}
+
+
+.decorate_sign_footer_parent {
+  width: 375px;
+}
+
+}
+
+
