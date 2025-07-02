@@ -4,7 +4,7 @@
 */
 
 :root {
-  /* Переменные тёмной темы */
+
   --bg-color: #000028;
   --bg-heading: #ff0070;
   --accent-color: #ff0070;
@@ -14,11 +14,16 @@
   --shadow-color: #ff0070;
 }
 
+
 /*планшет  устроиство */
-@media (max-width: 768px) {
+@media (max-width:  768px) {
   :root {
-    --page-width: 768px;
+    --page-width: 768px ;
     --header-height: 1024px;
+  }
+
+  .page {
+    
   }
 
   .header {
@@ -280,6 +285,11 @@
     padding: 40vh 0 0 50px;
   }
 }
+
+
+
+
+
 
 @media (max-width: 375px) {
   :root {

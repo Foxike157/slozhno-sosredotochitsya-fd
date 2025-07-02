@@ -26,6 +26,7 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font, IBMPlexMono);
   background-color: var(--bg-color, #000028);
+  background-attachment: fixed;
 }
 
 .header__theme-menu-button_active {
@@ -34,7 +35,7 @@
 
 header {
   width: var(--page-width);
-  width: inherit;
+
   display: flex;
   height: var(--header-height);
   justify-content: flex-start;
@@ -52,7 +53,6 @@ header {
   display: flex;
   list-style-type: none;
   gap: 10px;
-  list-style-type: none;
   background: none;
 }
 
@@ -181,7 +181,6 @@ header {
 
 main {
   margin: auto;
-  width: inherit;
   width: var(--page-width);
 }
 
@@ -268,13 +267,13 @@ main {
   font-size: 18px;
   line-height: 23.4px;
   color: var(--accent-color);
+  padding: 7px 0 0 0;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 8px;
   width: 984px;
   height: 431px;
   gap: 20px;
@@ -517,7 +516,6 @@ main {
 footer {
   width: auto;
   margin: auto;
-
   display: flex;
   height: 798px;
   flex-direction: column;
