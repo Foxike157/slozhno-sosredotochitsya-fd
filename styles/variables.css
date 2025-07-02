@@ -5,8 +5,13 @@
 
 :root {
   /* Переменные тёмной темы */
-
-  
+  --bg-color: #000028;
+  --bg-heading:#FF0070;
+  --accent-color: #FF0070;
+   --text-color: #F1B2CE;
+  --txt-color-h:#000028;
+   --col-or-h:#DB00FF;
+     --shadow-color:#FF0070;
 }
 
 /*планшет  устроиство */

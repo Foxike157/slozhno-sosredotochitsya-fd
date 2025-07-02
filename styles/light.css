@@ -10,8 +10,72 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
+  --bg-color: #FFF1F7;
+  --bg-heading:#FF8DCB;
+  --accent-color: #353430;
+   --text-color: #353430;
+  --txt-color-h:#353430;
+   --col-or-h:#FFC2E6;
+     --shadow-color:#FF8DCB;
+
+
+
+
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+
+.decorated-zone {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/cover-image-light.png);
 }
+
+.rec{
+  display: none;
+}
+
+circle{
+  display: none;
+}
+
+
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+
+  --bg-color: #FFF1F7;
+  --bg-heading:#FF8DCB;
+  --accent-color: #353430;
+   --text-color: #353430;
+  --txt-color-h:#353430;
+   --col-or-h:#FFC2E6;
+     --shadow-color:#FF8DCB;
+
+
+  }
+
+  /* Остальные стили, только при необходимости */
+
+.decorated-zone {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/cover-image-light.png);
+}
+
+.rec{
+  display: none;
+}
+
+circle{
+  display: none;
+}
+
+
+
+
+} 

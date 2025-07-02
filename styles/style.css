@@ -9,6 +9,10 @@
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
+  --txt-color-h:#000028;
+  --bg-heading:#FF0070;
+  --col-or-h:#DB00FF;
+  --shadow-color:#FF0070;
   
 }
 
@@ -29,6 +33,10 @@
 
 
 
+.header__theme-menu-button_active {
+  pointer-events: none
+}
+
 
 header {
    width: var(--page-width); 
@@ -39,6 +47,7 @@ header {
   flex-direction: column;
   margin: auto;
 }
+
 
 .decorated-zone {
   background-size: cover;
@@ -77,9 +86,8 @@ header {
 
 }
 
-.header__theme-menu-button:hover {
+.header__theme-menu-button:hover, .header__theme-menu-button:focus-visible {
  border: 1px var(--accent-color) solid;
-    padding: 70 0;
     height: 26px;
     width: 70px;
 }
@@ -139,18 +147,18 @@ font-style: normal;
   font-weight: 700;
  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
-color:#DB00FF;
+color: var(--col-or-h);
 }
 
 .focus {
   display: flex;
    align-items: flex-end;
    margin: 16vh 0 0 0 ;
-     text-shadow: 4px 4px 0 var(--accent-color);
+     text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .shadow_text {
-   text-shadow: 2px 1px 0 var(--accent-color);
+   text-shadow: 2px 1px 0 var(--shadow-color);
 }
 
 .parent_header_text { 
@@ -166,8 +174,8 @@ margin: 0 0 70px 55vh;
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
-   color:#000028;
-   background: #FF0070;
+   color:var(--txt-color-h);
+   background: var(--bg-heading);
 }
 
 .decorate_sign {
@@ -175,8 +183,8 @@ line-height: 23.4px;
     padding: 10px 0 1px 0px;
     width: 25px;
     height: 25px;
-    border-bottom: 2px #FF0070 solid;
-    border-left: 2px #FF0070 solid;
+    border-bottom: 2px var(--accent-color) solid;
+    border-left: 2px var(--accent-color) solid;
     margin: 1px 1px 22px 20px;
 }
 
@@ -202,7 +210,7 @@ height: 47px;
 }
 
 .decorated-zone_maine {
-  background: #000028;
+  background: var(--bg-color);
 }
 
 
@@ -217,7 +225,7 @@ font-family: 'IBM Plex Mono';
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px; 
-color:#FF0070;
+color:var(--accent-color);
 }
 
 .information_text_right_one {
@@ -228,8 +236,8 @@ color:#FF0070;
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
-background: #FF0070;
-color: #000028;
+background: var(--bg-heading);
+color: var(--txt-color-h);
 }
 
 .text_right_parent {
@@ -242,19 +250,18 @@ height: 211px;
 font-weight: 400;
 font-size: 18px;
 line-height: 23.4px;
-color:#F1B2CE;
+color:var(--text-color);
 margin: auto;
 }
 
 .content_title {
   margin: revert-layer;
-
 }
 
 .heading_parent {
 width: 649px;
 height: 20px;
-background: #FF0070;
+background: var(--bg-heading);
 
 }
 
@@ -291,7 +298,7 @@ height: 47px;
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;  
-color:#FF0070 ;
+color:var(--accent-color) ;
 }
 
 .cards {
@@ -319,7 +326,7 @@ height: 47px;
 .card__title-name {
  
   flex-direction: row;
-  background: #FF0070;
+  background: var(--bg-heading);
   font-family: 'IBM Plex Mono';
 font-weight: 700;
 font-size: 18px;
@@ -394,7 +401,7 @@ height: 98px;
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
-color: #FF0070;
+color: var(--accent-color);
 }
 
 
@@ -527,8 +534,8 @@ height: 117px;
 font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
-background: #FF0070;
-color: #000028;
+background: var(--bg-heading);
+color: var(--txt-color-h);
 margin:  32px 0 0 0vh;
 }
 
@@ -646,7 +653,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0 20px 0 20px;
-    background: #000028;
+    background: var(--bg-color);
 }
 
 
@@ -663,8 +670,8 @@ footer {
       box-sizing: border-box;
     width: 25px;
     height: 25px;
-    border-top: 1px #FF0070 solid;
-    border-right: 1px #FF0070 solid;
+    border-top: 1px var(--accent-color) solid;
+    border-right: 1px var(--accent-color) solid;
    margin: 4vh 0px 0px 60em;
 }
 
@@ -682,7 +689,7 @@ display: flex;
 
 .focus_footer {
 padding-top: 4vh;
-text-shadow: 2px 2px 0 var(--accent-color);
+text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 
@@ -697,8 +704,8 @@ text-shadow: 2px 2px 0 var(--accent-color);
       box-sizing: border-box;
     width: 25px;
     height: 25px;
-    border-bottom: 1px #FF0070 solid;
-    border-left: 1px #FF0070 solid;
+    border-bottom: 1px var(--accent-color) solid;
+    border-left: 1px var(--accent-color) solid;
     margin: 0vh 103vh 0px 0px;
 }
 
