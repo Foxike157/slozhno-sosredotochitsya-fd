@@ -9,24 +9,20 @@
 /*планшет  устроиство */
 @media (max-width: 768px) {
 
-:root {
-   --page-width: 768px;
-   --header-height:1024px;
-}
 
 
 .page {
 width: 768px;
 }
 
-   .header {
-    height: var(--header-height);
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: auto;
-    max-width: 100%;
-  }
+.header {
+height: 1024px;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+margin: auto;
+max-width: 100%;
+}
 
   .block {
     display: none;
@@ -40,7 +36,9 @@ width: 768px;
 
   .header__theme-menu-list {
     flex-direction: column;
-    margin: 18vh 3vh 0 0vh;
+    margin: 149px 30px 0 0vh;
+    padding: 0;
+    gap: 16px;
   }
 
   .header__theme-menu-item {
@@ -56,32 +54,58 @@ width: 768px;
   }
 
   .focus {
-  margin: 0 0 2% 0;
+  margin: 0 0 0 0;
   }
 
+.rec {
+          margin: 16px 3px 0 0;
+}
+
+.decorate_sign_right {
+  margin: 16px 16px 0 0;
+
+}
+
+
+
+
+.decorated-zone_maine {
+width: 768px;
+}
+
   .parent_header_text {
-    margin: 0 0 71px 50%;
+    margin: 0 0 124px 50%;
   }
 
   .header_text {
     padding: 0 0 0 0;
     width: 364px;
     height: 117px;
-    margin: 0vh 0 72px 0px;
+    margin: 0 0 8px 0;
   }
 
 
+
+
+
+  .information {
+    width: 768px;
+height: 648px;
+
+
+  } 
 
   .heading_parent {
     width: 472px;
     height: 23px;
   }
 
+  .heading {
+    width: 472px;
+height: 23px;
 
 
-.decorated-zone_maine {
-
-}
+  }
 
   .text_right_parent {
     width: 472px;
@@ -105,7 +129,7 @@ width: 768px;
   .information_lots {
     display: flex;
     flex-direction: column;
-    margin: 14vh 0 0 0;
+    margin: 6vh 0 0 0;
     width: 727px;
   }
 
@@ -117,15 +141,15 @@ width: 768px;
   .lots__heading {
     width: 236px;
     height: 70px;
-    padding: 4vh 0 0 0;
+    padding: 4vh 0 0 2vh;
   }
 
   .cards {
   display: flex;
   flex-direction: column;
     gap: 25px;
-    padding: 8vh 0 11vh 0;
     width: 728px;
+    margin: 68px 0 0 0;
   }
 
 .card__text  {
@@ -160,14 +184,6 @@ width: 768px;
   }
 
 
- .сard__text_one {
-
- }
-
-
-
-
-
 
   .information_text_right {
     width: 472px;
@@ -188,14 +204,15 @@ width: 768px;
     padding:  0;
   }
 
+
   .heading_list_right_parent {
     width: 472px;
-    margin: 9px 0 0 0;
+    margin: 13px 0 0 0;
   }
 
   .heading_list_right_sky_parent {
     width: 472px;
-    height: 314px;
+    height: 310px;
   }
 
   .heading_list_right_music_parent {
@@ -247,15 +264,19 @@ width: 768px;
   .information_list_three {
     height: 1296px;
     top: 2567px;
-   
-    margin-top: 29vh;
+    margin-top: 30vh;
   }
 
   .pictures {
     width: 728px;
     height: 823px;
-  margin: 11vh 0 0 0;
+  margin: 94px 0 0 0;
   }
+
+.gallery {
+  margin: 20px 0 0 0;
+
+}
 
   .heading_pictures {
     width: 728px;
@@ -299,26 +320,38 @@ width: 768px;
   }
 
   .decorate_sign_footer_up {
-    margin: 32px 0 0 88vh;
+   margin: 7px 0 0 723px;
     
   }
 
 
-.decorate_sign_footer_parent {
-  width: 768px; 
-  
+.decorate_sign {
+  box-sizing: border-box;
+    padding: 25px 0 0px 0px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px var(--accent-color) solid;
+    border-left: 1px var(--accent-color) solid;
+    margin: 5px 0px 20px 20px;
 }
 
 
+
+.decorate_sign_footer_parent {
+  width: 768px; 
+
+  }
+
+
   .decorate_sign_footer {
-margin: 55px 0 0 21px;
+    margin: 76px 0 0 20px;
   }
 
 
 
 
   .focus_footer {
-    padding: 10vh 0 0 56px;
+    padding: 9vh 0 0 38px;
   }
 
 
@@ -327,29 +360,6 @@ margin: 55px 0 0 21px;
 .focus_footer_parent {
   margin: 1vh 0 0 4vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -363,13 +373,8 @@ margin: 55px 0 0 21px;
 
 
 
-:root {
-   --page-width: 375px;
-   --header-height:668px;
-}
-
    .header {
-    height: var( --header-height);
+    height: 668px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -378,7 +383,7 @@ margin: 55px 0 0 21px;
   }
 
   .page {
-    width: var(--page-width);
+    width: 375px;
    
 
   }
@@ -402,13 +407,22 @@ margin: 0px 0px 4px 0;
 
 .header__theme-menu-list {
 display: flex;
-width: 70px;
-height: 98px;
-margin: 2vh 0vh 0 0vh;
-flex-direction: column;
+  width: 70px;
+  height: 98px;
+  margin: 17px 3px 0 0vh;
+  flex-direction: column;
+  gap: 16px;
 
 }
 
+.decorate_sign_right {
+  margin: 10px 10px 10px 0;
+
+}
+
+.rec {
+margin: 10px 4px 0 0px;
+}
 
 .parent_focus {
   width: 355px;
@@ -419,7 +433,7 @@ margin: 0% 0 0 1%;
 .focus { 
     font-size: 116px;
 padding: 0;
-margin: 14vh 0 0 1vh;
+margin: 17vh 0 0 1vh;
 }
 
 .parent_header_text {
@@ -472,6 +486,10 @@ margin: 0 0 0 0;
 .heading { 
   margin: 0;
   padding: 0 ;
+  width: 355px;
+height: 23px;
+
+
 
 
 }
@@ -554,6 +572,7 @@ width: 355px;
   width: 362px;
   margin: 0 0 0 0;
 }
+
 .card_two {
 height: 314px;
 width: 362px;
@@ -678,7 +697,7 @@ padding: 0;
 .heading_top {
   width: 355px;
 height: 47px;
-margin: 20px 0 0 0px;
+margin: 17px 0 0 0px;
 
 }
 
@@ -808,14 +827,13 @@ left: 10px;
 }
 
 footer {
-  width: 346px;
+  width: 375px;
 height: 668px;
-padding: 0 10px 0 10px ;
 
 }
 
 .focus_footer {
- padding: 11vh 0 0 5px;
+ padding: 11vh 0 0 0px;
   line-height: 83%;
   margin: 0;
 } 
@@ -827,15 +845,16 @@ width: 375px;
 }
 
 .decorate_sign_footer_up {
-  margin: 42px 0 0 91%;
+  margin: 22px 0 0 91%;
 }
 
 .decorate_sign_footer {
-margin: 38px 0 0 10px;
+margin: 60px 0 0 10px;
 }
 
 .focus_footer_parent{
-  width: 340px;
+  height: 83%;
+  width: 360px;
   margin: 0 0% 0% 0;
 }
 
@@ -849,13 +868,13 @@ margin: 38px 0 0 10px;
 .decorated-zone_maine {
   display: flex;
   flex-direction: column;
-  width: 355px;
+  width: 375px;
    column-gap: 40px ;
-   padding: 0;
+   padding: 0 0 0 10px;
 }
 
 .information_text_right_one { 
-  width: 375px;
+  width: 355px;
 
 }
 
@@ -863,6 +882,9 @@ margin: 38px 0 0 10px;
 
 .information_text {
   margin: 0;
+  width: 355px;
+height: 47px;
+
 }
 
 .dofamin_block {
@@ -872,5 +894,4 @@ margin: 38px 0 0 10px;
 
 
 }
-
 
