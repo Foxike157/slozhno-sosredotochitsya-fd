@@ -523,7 +523,7 @@ footer {
   width: var(--page-width);
   margin: auto;
   display: flex;
-  height: 804px;
+  height: 802px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
