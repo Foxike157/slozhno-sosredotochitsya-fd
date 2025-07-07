@@ -20,12 +20,13 @@
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-
-  decorated-zone {
+  
+  .decorated-zone {
     background-size: cover;
     background-position: center;
     background-image: url(../images/cover-image-dark.png);
   }
+
 }
 
 @media (prefers-color-scheme: dark) {
