@@ -101,7 +101,7 @@
   }
 
   .information_list_text {
-    margin: 5% 0 0 8%;
+    margin: 7% 0 0 8%;
   }
 
   .dofamin_block {
@@ -243,7 +243,7 @@
   .information_list_three {
     height: 1296px;
     top: 2567px;
-    margin-top: 23vh;
+    margin-top: 24vh;
   }
 
   .pictures {
@@ -287,7 +287,7 @@
 
   footer {
     width: 768px;
-    height: 1024px;
+    height: 1063px;
     padding: 0;
   }
 
@@ -315,11 +315,11 @@
   }
 
   .decorate_sign_footer {
-    margin: 76px 0 0 20px;
+    margin: 56px 0 0 20px;
   }
 
   .focus_footer {
-    padding: 7vh 0 0 34px;
+    padding: 4vh 0 0 34px;
   }
 
   .focus_footer_parent {
