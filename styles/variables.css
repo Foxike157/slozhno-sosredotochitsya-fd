@@ -287,7 +287,7 @@
 
   footer {
     width: 768px;
-    height: 1063px;
+    height: 1068px;
     padding: 0;
   }
 
@@ -315,7 +315,7 @@
   }
 
   .decorate_sign_footer {
-    margin: 56px 0 0 20px;
+    margin: 42px 0 0 20px;
   }
 
   .focus_footer {
@@ -359,7 +359,7 @@
     display: flex;
     width: 70px;
     height: 98px;
-    margin: 17px 3px 0 0vh;
+    margin: 20px 3px 0 0vh;
     flex-direction: column;
     gap: 16px;
   }
@@ -381,7 +381,7 @@
   .focus {
     font-size: 116px;
     padding: 0;
-    margin: 17vh 0 0 1vh;
+    margin: 18vh 0 0 1vh;
   }
 
   .parent_header_text {
@@ -479,6 +479,7 @@
     width: 355px;
     height: 1052px;
     margin: 0 0 0 10px;
+    gap:20px;
   }
 
   .card_one,
@@ -611,7 +612,7 @@
   }
 
   .content_paragraph {
-    margin: 1vh 0 0 0;
+    margin: 11px 0 0 0;
   }
 
   .information_text_right {
@@ -693,7 +694,7 @@
 
   footer {
     width: 375px;
-    height: 668px;
+    height: 678px;
   }
 
   .focus_footer {
@@ -708,11 +709,11 @@
   }
 
   .decorate_sign_footer_up {
-    margin: 22px 0 0 91%;
+    margin: 31px 0 0 91%;
   }
 
   .decorate_sign_footer {
-    margin: 50px 0 0 10px;
+    margin: 40px 0 0 10px;
   }
 
   .focus_footer_parent {
@@ -744,6 +745,6 @@
   }
 
   .dofamin_block {
-    margin: 24px 0 0 0;
+    margin: 19px 0 0 0;
   }
 }

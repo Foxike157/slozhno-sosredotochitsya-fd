@@ -523,7 +523,7 @@ footer {
   width: var(--page-width);
   margin: auto;
   display: flex;
-  height: 798px;
+  height: 804px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -570,5 +570,5 @@ footer {
   height: 25px;
   border-bottom: 1px var(--accent-color) solid;
   border-left: 1px var(--accent-color) solid;
-  margin: 4vh 103vh 0px 20px;
+  margin: 3vh 103vh 0px 20px;
 }
