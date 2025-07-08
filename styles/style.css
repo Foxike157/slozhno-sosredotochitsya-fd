@@ -145,7 +145,7 @@ margin: 20px 4px 0 0;
   display: flex;
   align-items: flex-end;
   margin: 20vh 0 0 0;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .shadow_text {
@@ -154,7 +154,7 @@ margin: 20px 4px 0 0;
 
 .parent_header_text {
   max-width: 491px;
-  margin: 0 0 74px 50vw;
+  margin: 0 0 9vw 50vw;
 }
 
 .header_text {
@@ -187,7 +187,7 @@ main {
   display: flex;
   gap: 19.93px;
   height: 586px;
-  padding-top: 40px;
+  padding-top: 56px;
 }
 
 .information_text_parent {
@@ -209,8 +209,12 @@ main {
 }
 
 .information_text_right_one {
-  padding: 0 0 0 0;
+  padding: 2px 0 0 20px;
 }
+
+ .dofamin_block {
+margin: 22px 0 0 0;
+ }
 
 .heading {
   font-family: "IBM Plex Mono";
@@ -235,11 +239,11 @@ height: 23px;
   font-size: 18px;
   line-height: 23.4px;
   color: var(--text-color);
-  margin: auto;
+  margin: 10px 0 0 0;
 }
 
 .content_title {
-  margin: revert-layer;
+  margin: 13px 0 0 0;
 }
 
 .heading_parent {
@@ -250,7 +254,7 @@ height: 23px;
 
 .information_lots {
   display: grid;
-  margin: auto;
+  margin: 7vh 0 0 0;
   width: 1024px;
   height: 526px;
 
@@ -294,7 +298,7 @@ height: 23px;
   line-height: 23.4px;
   letter-spacing: 0%;
   color: var(--txt-color-h);
-  margin: 22px 0 0 0;
+  margin: 3px 0 0 0;
 }
 
 .card__text {
@@ -331,12 +335,13 @@ height: 23px;
   display: flex;
   height: 1115px;
   padding-top: 25px;
+  justify-content:center ;
 }
 
 .information_list_text_parent {
   width: 315px;
   height: 98px;
- padding: 34px 0 0 19px;
+ padding: 34px 0 0 0px;
   grid-column: span 2 / span 2;
   grid-row: span 3 / span 3;
 }
@@ -361,7 +366,7 @@ height: 23px;
 
 .information_text_right {
  display: flex;
-    padding: 0vh 0 0 20px;
+    padding: 3vh 0 0 20px;
     flex-direction: column;
     gap: 20px;
 }
@@ -378,7 +383,7 @@ height: 23px;
 }
 
 .heading_top {
-  margin: 6vh 0 0 20px;
+  margin: 32px 0 0 20px;
 }
 
 .text_right_sky_parent {
@@ -448,7 +453,7 @@ height: 23px;
   line-height: 23.4px;
   background: var(--bg-heading);
   color: var(--txt-color-h);
-  margin: 30px 0 0 0vh;
+  margin: 40px 0 0 0vh;
 }
 
 .gallery {
@@ -456,7 +461,7 @@ height: 23px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  margin: 2vh 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .image_sunset {
@@ -527,6 +532,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--bg-color);
+  block-size: 100vh;
 }
 
 .decorate_sign_footer_up_parent {
@@ -541,7 +547,7 @@ footer {
   height: 25px;
   border-top: 1px var(--accent-color) solid;
   border-right: 1px var(--accent-color) solid;
- margin: 17px 0px 0px 979px;
+ margin: 16px 0px 0px 979px;
 }
 
 .focus_footer_parent {
@@ -554,8 +560,8 @@ footer {
 }
 
 .focus_footer {
-  padding-top: 5vh;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  padding-top: 8vh;
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 .decorate_sign_footer_parent {
@@ -569,6 +575,6 @@ footer {
   height: 25px;
   border-bottom: 1px var(--accent-color) solid;
   border-left: 1px var(--accent-color) solid;
-  margin: 3vh 103vh 0px 20px;
+  margin: 50px 103vh 0px 20px;
 }
 
