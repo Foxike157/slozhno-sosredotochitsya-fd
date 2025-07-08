@@ -18,7 +18,7 @@
     max-width: 100%;
   }
 
-  .block {
+  .empty {
     display: none;
   }
 
@@ -104,9 +104,7 @@
     margin: 7% 0 0 8%;
   }
 
-  .dofamin_block {
-    
-  }
+ 
 
   .information_lots {
     display: flex;
@@ -169,7 +167,6 @@
     width: 472px;
     gap: 20px;
     padding: 10px 0 0 20px;
-    gap: 20px;
   }
 
   .heading_top {
@@ -344,7 +341,7 @@
     width: 375px;
   }
 
-  .block {
+  .empty {
     display: none;
   }
 
@@ -752,7 +749,7 @@
     height: 47px;
   }
 
-  .dofamin_block {
+  .dofamin {
     margin: 19px 0 0 0;
   }
 }
