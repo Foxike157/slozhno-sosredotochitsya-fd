@@ -83,7 +83,7 @@
   }
 
   .header_text {
-    padding: 0 0 0 0;
+    padding: 0 50px 0 0;
     width: 364px;
     height: 117px;
     margin: 0 0 13px 0;
@@ -125,7 +125,7 @@
   .information_lots {
     display: flex;
     flex-direction: column;
-    margin: 73px 0 242px 0;
+    margin: 76px 0 238px 0;
     width: 755px;
     gap: 20px;
   }
@@ -245,7 +245,7 @@
   .heading_pictures {
     width: 728px;
     height: 23px;
-    margin: 37px 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   .sunset {
@@ -275,13 +275,14 @@
 
   footer {
     width: 768px;
-    height: 1070px;
+    min-height: 1024px;
     padding: 0;
+    justify-content: space-evenly;
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 38px 0 0 69vh;
-    width: 25px;
+    margin: 45px 0 0 69vh;
+    width: 29px;
   }
 
   .decorate_sign {
@@ -290,11 +291,11 @@
 
   .decorate_sign_footer_parent {
     width: 768px;
-    margin: 16px 0 27px 0;
+    margin: 56px 0 0px 0;
   }
 
   .heading_footer {
-    padding: 5vh 0 0 34px;
+    padding: 10vh 0 0 35px;
   }
 
   .heading_footer_parent {
@@ -651,15 +652,17 @@
 
   footer {
     width: 375px;
-    height: 670px;
     min-height: 668px;
+    height: 100vh;
 
   }
 
   .heading_footer {
-    padding: 21vh 0 0 0px;
-    line-height: 83%;
-    margin: 0;
+  display: flex;
+  padding: 17vh 0 0 0px;
+  line-height: 83%;
+  margin: 0;
+  justify-content: center;
   }
 
   .decorate_sign_footer_up_parent {
@@ -668,14 +671,14 @@
   }
 
   .heading_footer_parent {
-    height: 79%;
-    width: 360px;
+  height: 83%;
+  width: 302px;
     margin: 0 0% 0% 0;
   }
 
   .decorate_sign_footer_parent {
     width: 297px;
-    margin: 74px 76px 0 0;
+    margin: 51px 76px 0 0;
   }
 
   .decorated-zone_maine {

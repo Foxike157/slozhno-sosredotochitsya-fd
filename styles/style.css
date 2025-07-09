@@ -10,6 +10,7 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-color: var(--bg-color);
+  background-attachment: fixed;
 }
 
 header {
@@ -475,8 +476,8 @@ footer {
   width: var(--page-width);
   margin: auto;
   display: flex;
-  height: 768px;
-  min-height: 776px;
+  min-height: 768px;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
