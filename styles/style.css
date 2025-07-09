@@ -1,10 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
-
-
-
-
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   display: flex;
@@ -22,11 +17,10 @@ header {
   width: var(--page-width);
   display: flex;
   block-size: 100vh;
-  min-height:768px ;
+  min-height: 768px;
   justify-content: flex-start;
   flex-direction: column;
   margin: 0 0 60px 0;
- 
 }
 
 .decorated-zone {
@@ -46,7 +40,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 16px 40vh 0 0;
-  
 }
 
 .header__theme-menu-list {
@@ -85,20 +78,17 @@ header {
   justify-content: flex-end;
 }
 
-
 .parent_rec {
   display: flex;
   justify-content: flex-end;
   width: 100px;
-  height:26px ;
+  height: 26px;
 }
 
-
-
-.rec::after{
-    position: absolute;
-    content: "";
-    display: block;
+.rec::after {
+  position: absolute;
+  content: "";
+  display: block;
   width: 9px;
   height: 9px;
   margin: 7px 0 0 43px;
@@ -106,7 +96,6 @@ header {
   background: var(--accent-color);
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
-
 
 .rec {
   display: flex;
@@ -128,13 +117,6 @@ header {
   border-right: 1px var(--accent-color) solid;
   margin: 20px 20px 0 0;
 }
-
-
-
-
-
-
-
 
 .parent_heading {
   display: flex;
@@ -162,15 +144,14 @@ header {
 
 .shadow_text {
   text-shadow: 2px 1px 0 var(--shadow-color);
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .shadow_text:hover {
   text-decoration: underline;
 }
 
-.shadow_text:active{
+.shadow_text:active {
   text-decoration: none;
 }
 
@@ -178,10 +159,9 @@ header {
   border: 1px;
 }
 
-
 .parent_header_text {
   max-width: 491px;
- margin: 0 0 90px 513px;
+  margin: 0 0 90px 513px;
 }
 
 .header_text {
@@ -210,16 +190,16 @@ main {
 
 .heading_title_section {
   font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23.4px;
-    color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--accent-color);
 }
 
 .content-section {
   margin: auto;
   display: flex;
-  gap:20px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -240,8 +220,7 @@ main {
   background: var(--bg-heading);
   color: var(--txt-color-h);
   width: 649px;
-height: 23px;
-
+  height: 23px;
 }
 
 .text_right_parent {
@@ -273,7 +252,6 @@ height: 23px;
   margin: 73px 0 59px 0;
   width: 1024px;
   height: 526px;
-
 }
 
 .lots__heading_parent {
@@ -318,8 +296,6 @@ height: 23px;
   margin: 10px 0 0 0;
 }
 
-
-
 .card_one {
   width: 315px;
   height: 384px;
@@ -338,8 +314,6 @@ height: 23px;
   grid-row: span 5 / span 5;
 }
 
-
-
 .information_list_text_parent {
   width: 315px;
   height: 98px;
@@ -352,12 +326,10 @@ height: 23px;
 }
 
 .cards_part {
-   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-
 
 .heading_list_right_parent {
   width: 649px;
@@ -369,8 +341,6 @@ height: 23px;
   height: 244px;
   grid-column: span 5 / span 5;
 }
-
-
 
 .text_right_sky_parent {
   width: 647.5520629882812px;
@@ -394,7 +364,6 @@ height: 23px;
   height: 197px;
   grid-column: span 5 / span 5;
   grid-row-start: 3;
-
 }
 
 .text_right_walk_parent {
@@ -507,7 +476,7 @@ footer {
   width: var(--page-width);
   margin: auto;
   display: flex;
-  min-height: 768px;
+  min-height: 776px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -521,15 +490,12 @@ footer {
   margin: 2vh 0px 0px 125vh;
 }
 
-
-
 .heading_footer_parent {
   display: flex;
   flex-direction: column;
   height: 89%;
   justify-content: center;
   width: 471px;
-
 }
 
 .heading_footer {
@@ -540,7 +506,5 @@ footer {
 .decorate_sign_footer_parent {
   width: 27px;
   height: 0;
-margin: 5vh 130vh 0 0;
+  margin: 5vh 130vh 0 0;
 }
-
-

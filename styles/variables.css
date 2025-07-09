@@ -15,12 +15,7 @@
   --txt-color-h: #000028;
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
-
 }
-
-
-
-
 
 /*планшет  устроиство */
 @media (max-width: 768px) {
@@ -29,7 +24,7 @@
   }
 
   .header {
-    min-height:1024px ;
+    min-height: 1024px;
     margin: 0 0 60px 0;
     max-width: 100%;
   }
@@ -58,32 +53,29 @@
     margin: 0;
   }
 
-  .heading_title  {
+  .heading_title {
     margin: 0 0 0 0;
   }
 
-.header-menu {
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
+  .header-menu {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
   }
 
   .rec {
     margin: 16px 3px 0 0;
   }
 
-.rec::after{
-margin: 8px 0 0 42px;
-}
+  .rec::after {
+    margin: 8px 0 0 42px;
+  }
 
-.decorate_sign_corner {
-margin: 16px 16px 0 0;
-}
-
-
+  .decorate_sign_corner {
+    margin: 16px 16px 0 0;
+  }
 
   .decorated-zone_maine {
     width: 768px;
-
   }
 
   .parent_header_text {
@@ -102,16 +94,14 @@ margin: 16px 16px 0 0;
     max-height: 1296px;
   }
 
-
   .heading_parent {
     width: 472px;
     height: 23px;
   }
 
-.content_title {
-  margin: 11px 0 0 0 ;
-}
-
+  .content_title {
+    margin: 11px 0 0 0;
+  }
 
   .heading {
     width: 472px;
@@ -132,14 +122,12 @@ margin: 16px 16px 0 0;
     margin: 7% 0 0 8%;
   }
 
- 
-
   .information_lots {
     display: flex;
     flex-direction: column;
     margin: 73px 0 242px 0;
     width: 755px;
-    gap:20px;
+    gap: 20px;
   }
 
   .lots__heading_parent {
@@ -188,8 +176,6 @@ margin: 16px 16px 0 0;
     grid-row: span 2 / span 2;
     grid-row-start: 5;
   }
-
-
 
   .heading_list_right_parent {
     width: 472px;
@@ -246,11 +232,10 @@ margin: 16px 16px 0 0;
     height: 141px;
   }
 
-
   .pictures {
     width: 728px;
     height: 823px;
-   margin: 0px 0 9vh 0;
+    margin: 0px 0 9vh 0;
   }
 
   .gallery {
@@ -262,6 +247,7 @@ margin: 16px 16px 0 0;
     height: 23px;
     margin: 37px 0 0 0;
   }
+
   .sunset {
     width: 479.00006103515625px;
     height: 192px;
@@ -289,16 +275,14 @@ margin: 16px 16px 0 0;
 
   footer {
     width: 768px;
-    height: 1067px;
+    height: 1068px;
     padding: 0;
   }
 
   .decorate_sign_footer_up_parent {
-   margin: 38px 0 0 69vh;
+    margin: 38px 0 0 69vh;
     width: 25px;
   }
-
-
 
   .decorate_sign {
     padding: 25px 0 0px 0px;
@@ -308,8 +292,6 @@ margin: 16px 16px 0 0;
     width: 768px;
     margin: 16px 0 27px 0;
   }
-
-  
 
   .heading_footer {
     padding: 5vh 0 0 34px;
@@ -338,9 +320,9 @@ margin: 16px 16px 0 0;
     margin: 0px 0px 4px 41vh;
   }
 
-.decorate_sign_corner {
-  margin: 10px 10px 0 0;
-}
+  .decorate_sign_corner {
+    margin: 10px 10px 0 0;
+  }
 
   .header__theme-menu {
     flex-direction: column-reverse;
@@ -355,20 +337,19 @@ margin: 16px 16px 0 0;
     flex-direction: column;
     gap: 16px;
   }
-.header-menu {
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
 
-}
-
+  .header-menu {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
 
   .rec {
     margin: 10px 4px 0 0px;
   }
 
-.rec::after{
-  margin: 8px 0 0 44px;
-}
+  .rec::after {
+    margin: 8px 0 0 44px;
+  }
 
   .parent_heading {
     width: 355px;
@@ -376,7 +357,7 @@ margin: 16px 16px 0 0;
     margin: 0% 0 0 1%;
   }
 
-  .heading_title  {
+  .heading_title {
     font-size: 116px;
     padding: 0;
     margin: 17vh 0 0 1vh;
@@ -393,7 +374,7 @@ margin: 16px 16px 0 0;
   }
 
   .decorate_sign {
-margin: 30px 0 0 10px;
+    margin: 30px 0 0 10px;
   }
 
   .content-section {
@@ -411,7 +392,7 @@ margin: 30px 0 0 10px;
     width: 355px;
     height: 47px;
     padding: 0 0 0 0;
-   margin: 0 0 0 10px;
+    margin: 0 0 0 10px;
   }
 
   .heading_parent {
@@ -469,7 +450,7 @@ margin: 30px 0 0 10px;
     height: 70px;
 
     padding: 50px 0 0 0vh;
-    margin: 0 0 50px 10px ;
+    margin: 0 0 50px 10px;
   }
 
   .cards {
@@ -527,13 +508,10 @@ margin: 30px 0 0 10px;
     margin: 0;
   }
 
- 
-
   .heading_list_right_parent {
     width: 355px;
     height: 23px;
     top: 67px;
-   
   }
 
   .heading_list_right_sky_parent {
@@ -544,7 +522,7 @@ margin: 30px 0 0 10px;
   .heading_list_right_music_parent {
     width: 355px;
     height: 244px;
-    margin: 0 ;
+    margin: 0;
   }
 
   .heading_list_right_walk_parent {
@@ -572,8 +550,6 @@ margin: 30px 0 0 10px;
     gap: 20px;
     margin: 0 0 0 10px;
   }
-
-
 
   .text_right_sky_parent {
     width: 354.8390808105469px;
@@ -603,8 +579,6 @@ margin: 30px 0 0 10px;
   .content_paragraph {
     margin: 11px 0 0 0;
   }
-
-
 
   .pictures {
     display: flex;
@@ -677,7 +651,9 @@ margin: 30px 0 0 10px;
 
   footer {
     width: 375px;
+    height: 668px;
     min-height: 668px;
+
   }
 
   .heading_footer {
@@ -687,11 +663,9 @@ margin: 30px 0 0 10px;
   }
 
   .decorate_sign_footer_up_parent {
-   margin: 6% 0 0 82%;
-   width: 0px;
+    margin: 6% 0 0 82%;
+    width: 0px;
   }
-
-
 
   .heading_footer_parent {
     height: 79%;
@@ -708,7 +682,6 @@ margin: 30px 0 0 10px;
     display: flex;
     flex-direction: column;
     width: 375px;
-
   }
 
   .information_text_right_one {
@@ -722,6 +695,4 @@ margin: 30px 0 0 10px;
     width: 355px;
     height: 47px;
   }
-
-
 }

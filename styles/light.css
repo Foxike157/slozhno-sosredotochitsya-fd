@@ -20,22 +20,17 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-
-
 }
 
-
 .theme-light .decorated-zone {
-     background-size: cover;
-    background-position: center;
-  background-image:url(../images/cover-image-light.png) ;
-} 
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/cover-image-light.png);
+}
 
 .theme-light .rec {
   display: none;
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -52,12 +47,13 @@
 
   /* Остальные стили, только при необходимости */
 
-.theme-auto .decorated-zone{
-     background-size: cover;
+  .theme-auto .decorated-zone {
+    background-size: cover;
     background-position: center;
-  background-image:url(../images/cover-image-light.png) ;
-}
+    background-image: url(../images/cover-image-light.png);
+  }
 
-
-  
+  .theme-auto .rec {
+    display: none;
+  }
 }
