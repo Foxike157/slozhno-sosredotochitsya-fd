@@ -19,6 +19,8 @@
 }
 
 .theme-light .page {
+   background-image: url(../images/cover-image-light.png);
+
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 

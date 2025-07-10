@@ -1,16 +1,35 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+:root {
+  /*размеры*/
+  --page-width: 1024px;
+  /*оформление страницы */
+  --main-font: "IBM Plex mono", sans-serif;
+  --bg-color: #000028;
+  --bg-heading: #ff0070;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --txt-color-h: #000028;
+  --col-or-h: #db00ff;
+  --shadow-color: #ff0070;
+}
+
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
   width: var(--page-width);
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
-  background-color: var(--bg-color);
+  /*background-color: var(--bg-color);*/
   background-attachment: fixed;
+  background-image: url(../images/cover-image-dark.png);
+  
 }
 
 header {
@@ -20,7 +39,6 @@ header {
   min-height: 768px;
   justify-content: flex-start;
   flex-direction: column;
-  margin: 0 0 60px 0;
 }
 
 .decorated-zone {
@@ -201,6 +219,7 @@ main {
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin: 8vh 0 0 0 ;
 }
 
 .information_text_parent {
@@ -249,7 +268,7 @@ main {
 
 .information_lots {
   display: grid;
-  margin: 73px 0 59px 0;
+  margin: 70px 0 59px 0;
   width: 1024px;
   height: 526px;
 }
