@@ -26,8 +26,8 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-attachment: fixed;
-  background-image: var(--bg-image);
-  position: absolute;
+  background-color:var(--bg-color) ;
+  background-image: var(--bg-image),var(--bg-color);
 }
 
 header {
@@ -229,7 +229,8 @@ header {
   background: var(--bg-color);
   width: var(--page-width);
   gap: 80px;
-  padding-top: 60px;
+  padding-top:60px;
+  padding-bottom: 53px;
 }
 
 .heading {
@@ -405,7 +406,7 @@ header {
 
 .pictures {
   height: 100%;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 0 20px;
 }
 
 .heading_pictures {
@@ -482,11 +483,11 @@ header {
 
 footer {
   display: grid;
-  grid-template-rows: 11vw 8vw 28vw;
+  grid-template-rows: 8vw 8vw 28vw;
   grid-template-columns: 26vw 47vw 0vw;
   gap: 0px 10px;
   width: var(--page-width);
-  min-height: 800px;
+  min-height: 768px;
   height: 100vh;
   background: var(--bg-color);
 }
@@ -494,7 +495,7 @@ footer {
 .decorate_sign_footer_up_parent {
   width: 27px;
   height: 0px;
-  margin: 4vh 0px 0px 20vw;
+  margin: 0vh 0px 0px 20vw;
   grid-area: 1 / 4 / 3 / 5;
 }
 
