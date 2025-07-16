@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 :root {
   /*размеры*/
   --page-width: 1024px;
@@ -13,6 +12,7 @@
   --txt-color-h: #000028;
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
+  --border-color: #FF007066;
 }
 
 .page {
@@ -27,7 +27,6 @@
   background-attachment: fixed;
   background-image: url(../images/cover-image-dark.png);
   position: absolute;
-
 }
 
 header {
@@ -55,17 +54,17 @@ header {
 .header__theme-menu {
   display: flex;
   justify-content: space-between;
-  margin: 16px 40vh 0 0;
+  margin: 18px 30vw 0 0;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 24px;
+  gap: 18px;
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
+
+
+
 
 .header__theme-menu-button {
   font-family: var(--main-font);
@@ -77,17 +76,31 @@ header {
   border: none;
 }
 
-.header__theme-menu-button:hover {
+
+.header__theme-menu-button:default,
+.header__theme-menu-button_active {
+  pointer-events: none;
   border: 1px var(--accent-color) solid;
   padding: 70 0;
+  height: 26px;
+  width: 70px;
+  text-decoration: none;
+}
+
+
+.header__theme-menu-button:active,
+.header__theme-menu-button:hover {
+  border: 1px var(--border-color) solid;
+ padding: 70 0;
   height: 26px;
   width: 70px;
 }
 
 .header__theme-menu-button:focus,
-.header__theme-menu-button:active {
-  text-decoration: underline var(--accent-color) solid;
+.header__theme-menu-button:focus-visible {
+text-decoration: underline var(--accent-color) solid;
 }
+
 
 .header-menu {
   display: flex;
@@ -146,7 +159,7 @@ header {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
- font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
   color: var(--col-or-h);
   display: flex;
@@ -155,22 +168,21 @@ header {
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
-
 .shadow_text {
-  text-shadow: 2px 1px 0 var(--shadow-color);
+ text-shadow: 1px 3px 0 var(--shadow-color);
   text-decoration: none;
 }
 
 .shadow_text:hover {
-  text-decoration: underline;
+  text-decoration: underline solid var(--text-color);
 }
-
-.shadow_text:active {
+.shadow_text:default {
   text-decoration: none;
 }
 
 .shadow_text:focus {
-  border: 1px;
+  border: 1px solid var(--text-color);
+  text-decoration: none;
 }
 
 .parent_header_text {
@@ -187,7 +199,6 @@ header {
   background: var(--bg-heading);
 }
 
-
 .decorate_sign {
   box-sizing: border-box;
   padding: 23px 0 1px 0px;
@@ -197,8 +208,6 @@ header {
   border-left: 1px var(--accent-color) solid;
   margin: 0px 0px 20px 20px;
 }
-
-
 
 .heading_title_section {
   font-family: var(--main-font);
@@ -225,7 +234,7 @@ header {
   flex-direction: column;
   background: var(--bg-color);
   width: var(--page-width);
-  gap:80px;
+  gap: 80px;
   padding-top: 60px;
 }
 
@@ -268,7 +277,7 @@ header {
   display: grid;
   width: 1024px;
   height: 498px;
-  gap:20px
+  gap: 20px;
 }
 
 .lots__heading_parent {
@@ -301,7 +310,6 @@ header {
   line-height: 23.4px;
   letter-spacing: 0%;
   color: var(--txt-color-h);
- 
 }
 
 .card__text {
@@ -336,78 +344,67 @@ header {
   height: 98px;
 }
 
-.information_text_right_parent_three {
-  grid-column: span 3 / span 3;
-  grid-row: span 10 / span 10;
-  grid-column-start: 3;
-}
-
 .cards_part {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.heading_list_right_parent {
-  width: 649px;
-  height: 20px;
-}
-
-.heading_list_right_sky_parent {
+.heading_list_sky_parent {
   width: 649px;
   height: 244px;
   grid-column: span 5 / span 5;
 }
 
-.text_right_sky_parent {
+.text_sky_parent {
   width: 647.5520629882812px;
   height: 211px;
 }
 
-.heading_list_right_music_parent {
+.heading_list_music_parent {
   width: 649px;
   height: 150px;
   grid-column: span 5 / span 5;
   grid-row-start: 2;
 }
 
-.text_right_music_parent {
+.text_music_parent {
   width: 649px;
   height: 117px;
 }
 
-.heading_list_right_walk_parent {
+.heading_list_walk_parent {
   width: 649px;
   height: 197px;
   grid-column: span 5 / span 5;
   grid-row-start: 3;
 }
 
-.text_right_walk_parent {
+.text_walk_parent {
   width: 649px;
   height: 197px;
 }
 
-.heading_list_right_good_parent {
+.heading_list_good_parent {
   width: 649px;
   height: 151px;
   grid-column: span 5 / span 5;
   grid-row-start: 4;
 }
 
-.text_right_good_parent {
+.text_good_parent {
   width: 649px;
   height: 118px;
 }
 
-.heading_list_right_read_parent {
+.heading_list_read_parent {
   width: 649px;
   height: 150px;
   grid-column: span 5 / span 5;
   grid-row-start: 5;
 }
 
-.text_right_read_parent {
+.text_read_parent {
   width: 649px;
   height: 117px;
 }
@@ -490,15 +487,14 @@ header {
 }
 
 footer {
-    display: grid;
-    grid-template-rows: 11vw 8vw 28vw;
-    grid-template-columns: 26vw 47vw 0vw;
-    gap: 0px 10px;
-    width: var(--page-width);
-    min-height: 799px;
-    height: 100vh;
-    background: var(--bg-color);
-
+  display: grid;
+  grid-template-rows: 11vw 8vw 28vw;
+  grid-template-columns: 26vw 47vw 0vw;
+  gap: 0px 10px;
+  width: var(--page-width);
+  min-height: 799px;
+  height: 100vh;
+  background: var(--bg-color);
 }
 
 .decorate_sign_footer_up_parent {
@@ -506,7 +502,6 @@ footer {
   height: 0px;
   margin: 4vh 0px 0px 20vw;
   grid-area: 1 / 4 / 3 / 5;
-
 }
 
 .heading_footer_parent {
@@ -514,7 +509,6 @@ footer {
   width: 471px;
   margin: 0 0 0 0;
   grid-area: 3 / 2 / 5 / 4;
-
 }
 
 .heading_footer {
@@ -526,6 +520,4 @@ footer {
   height: 0;
   margin: 24vw 0 0 0;
   grid-area: 5 / 1 / 7 / 2;
-	
 }
-
