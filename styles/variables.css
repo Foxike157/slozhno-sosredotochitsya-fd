@@ -5,14 +5,13 @@
 
 
 /*планшет  устроиство */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .page {
     width: 768px;
   }
 
   .header {
     min-height: 1024px;
-    margin: 0 0 60px 0;
     max-width: 100%;
   }
 
@@ -40,8 +39,9 @@
     margin: 0;
   }
 
-  .heading_title {
+.heading_title{
     margin: 0 0 0 0;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header-menu {
@@ -95,7 +95,7 @@
     height: 23.92px;
   }
 
-  .text_right_parent {
+  .text_section_parent {
     width: 472px;
     height: 278px;
   }
@@ -110,17 +110,14 @@
   }
 
   .information_lots {
-    display: flex;
-    flex-direction: column;
-    margin: 76px 0 238px 0;
     width: 755px;
-    gap: 20px;
+    height: 679px;
   }
 
   .lots__heading_parent {
     width: 236px;
     height: 70px;
-    padding: 8px 0 0 20px;
+    padding-top: 4px;
   }
 
   .lots__heading {
@@ -130,13 +127,12 @@
   }
 
   .cards {
-    display: flex;
-    flex-direction: column;
     width: 755px;
     height: 585px;
-    padding: 8px 0px 0 20px;
+    padding: 2px 0px 0 20px;
   }
 
+  
   .card__title-name {
     margin: 0;
   }
@@ -171,7 +167,7 @@
 
   .heading_list_right_sky_parent {
     width: 472px;
-    height: 310px;
+    height: 314px;
   }
 
   .heading_list_right_music_parent {
@@ -195,44 +191,44 @@
   }
 
   .text_right_sky_parent {
-    width: 472px;
-    height: 280.1079406738281px;
+  width: 472px;
+height: 280.1079406738281px;
   }
 
   .text_right_music_parent {
-    width: 472px;
-    height: 164px;
+width: 472px;
+height: 164px;
+
   }
 
   .text_right_walk_parent {
-    width: 472px;
-    height: 257.1134033203125px;
+  width: 472px;
+height: 257.1134033203125px;
   }
 
   .text_right_good_parent {
-    width: 472px;
-    height: 163.17172241210938px;
+width: 472px;
+height: 163.17172241210938px;
   }
 
   .text_right_read_parent {
-    width: 472px;
-    height: 141px;
+width: 472px;
+height: 141px;
   }
 
   .pictures {
     width: 728px;
     height: 823px;
-    margin: 0px 0 9vh 0;
+    margin: 0px 0 0 0;
   }
 
   .gallery {
-    margin: 20px 0 0 0;
+
   }
 
   .heading_pictures {
     width: 728px;
     height: 23px;
-    margin: 40px 0 0 0;
   }
 
   .sunset {
@@ -262,14 +258,14 @@
 
   footer {
     width: 768px;
-    min-height: 1024px;
-    padding: 0;
-    justify-content: space-evenly;
+    min-height: 1080px;
+    padding: 60px 0 0 0;
+    grid-template-rows: 34vw 10vw 10vw;
+    grid-template-columns: 16vw 10vw 54vw;
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 45px 0 0 69vh;
-    width: 29px;
+    margin: 1vw 0 0 10vw;
   }
 
   .decorate_sign {
@@ -277,26 +273,22 @@
   }
 
   .decorate_sign_footer_parent {
-    width: 768px;
-    margin: 56px 0 0px 0;
+    margin: 34vh 0 0 0;
   }
 
   .heading_footer {
-    padding: 10vh 0 0 35px;
+    padding: 3vh 0 0 35px;
   }
 
   .heading_footer_parent {
-    margin: 1vh 0 0 4vh;
+    margin: 9vh 0 0 5vw;
   }
+
 }
 
-@media (max-width: 375px) {
+@media (width <= 375px) {
   .header {
     min-height: 668px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 0 0 91px 0;
     max-width: 100%;
   }
 
@@ -345,8 +337,7 @@
     margin: 0% 0 0 1%;
   }
 
-  .heading_title {
-    font-size: 116px;
+  .heading_title {  
     padding: 0;
     margin: 17vh 0 0 1vh;
   }
@@ -366,8 +357,8 @@
   }
 
   .content-section {
-    width: 375px;
-    height: 850px;
+    width: 97.333vw;
+    max-height: 1737px;
     flex-direction: column;
     margin: 0 0 0 0;
   }
@@ -379,8 +370,6 @@
   .information_text_parent {
     width: 355px;
     height: 47px;
-    padding: 0 0 0 0;
-    margin: 0 0 0 10px;
   }
 
   .heading_parent {
@@ -399,24 +388,22 @@
     height: 47px;
   }
 
-  .text_right_parent {
+  .text_section_parent {
     width: 351.0270690917969px;
     height: 398px;
   }
 
   .information_lots {
-    display: flex;
     width: 355px;
     height: 1119px;
-    flex-direction: column;
-    padding: 0 0 0 0;
-    margin: 26% 0 125% 0;
-    gap: 20px;
+
+   
   }
 
   .lots__heading_parent {
     width: 355px;
-    padding: 0 0 0 10px;
+    padding: 0;
+    height: 40px;
   }
 
   .lots__heading {
@@ -436,9 +423,6 @@
   .information_list_text_parent {
     width: 355px;
     height: 70px;
-
-    padding: 50px 0 0 0vh;
-    margin: 0 0 50px 10px;
   }
 
   .cards {
@@ -447,7 +431,7 @@
     padding: 0;
     width: 355px;
     height: 1052px;
-    margin: 0 0 0 10px;
+
   }
 
   .card_one,
@@ -531,13 +515,7 @@
     padding: 0;
   }
 
-  .cards_part {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 0 0 10px;
-  }
+
 
   .text_right_sky_parent {
     width: 354.8390808105469px;
@@ -565,7 +543,7 @@
   }
 
   .content_paragraph {
-    margin: 11px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   .pictures {
@@ -574,22 +552,21 @@
     width: 355px;
     height: 1400px;
     padding: 0;
-    margin: 138vw 0 0 0;
     gap: 10px;
   }
 
   .gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0 0 0 10px;
+  grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: 1fr;
+	gap: 10px 0px;
+    margin:0;
+    height: 100%;
   }
 
   .heading_pictures {
     width: 354.9991760253906px;
     height: 24px;
     left: 10px;
-    margin: 0 0 0 10px;
   }
 
   .sunset {
@@ -609,13 +586,23 @@
   .books {
     width: 354.9991760253906px;
     height: 355px;
-    top: 798px;
-    left: 10px;
   }
+
+
+.image_sunset {
+  width: 354.9991760253906px;
+    height: 142px;
+    grid-area: 1/1/2/2;
+}
+
+.image_ice-scream {
+  	grid-area: 2/1/3/2;
+}
 
   .image_tape {
     width: 355px;
     height: 237px;
+    grid-area: 3/1/4/2;
   }
 
   .the_tape {
@@ -625,9 +612,18 @@
     left: 10px;
   }
 
+
+.image_books {
+width: 354.9991760253906px;
+    height: 355px;
+    grid-area: 4/1/5/2;
+
+}
+
   .image_street {
     width: 354.9991760253906px;
     height: 237px;
+    	grid-area: 5/1/6/2;
   }
 
   .the_street {
@@ -638,40 +634,46 @@
   }
 
   footer {
-    width: 375px;
-    min-height: 668px;
+    max-width: 375px;
+    min-height: 707px;
     height: 100vh;
-
+grid-template-rows: repeat(3, 1fr);
+grid-template-columns: repeat(4, 15px 64vw 20vw);
+gap: 0;
+padding-top:40px ;
   }
 
   .heading_footer {
-  display: flex;
-  padding: 9vh 0 0 0px;
+  padding:0;
   line-height: 83%;
   margin: 0;
-  justify-content: center;
+
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 6% 0 0 82%;
+        margin: 0vh 0 0 52%;
     width: 0px;
+grid-area: 1/4/2/5;
   }
 
   .heading_footer_parent {
-  height: 83%;
-  width: 302px;
-    margin: 0 0% 0% 0;
+  height: 14.371vh;
+  width: 348px;
+    margin: 10vh 0% 0% 0;
+   grid-area: 2 / 2 / 3 / 4;
   }
 
   .decorate_sign_footer_parent {
-    width: 297px;
-    margin: 0px 76px 0 0;
+    width: 40px;
+    margin: 23vh 0px 0 0;
+   grid-area: 3/1/4/2;
   }
 
   .decorated-zone_maine {
-    display: flex;
-    flex-direction: column;
     width: 375px;
+    padding-top:40px ;
+    gap:50px;
+    padding-left:10px;
   }
 
   .information_text_right_one {

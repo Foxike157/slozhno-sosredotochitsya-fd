@@ -24,8 +24,10 @@
   width: var(--page-width);
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
-  background-color: var(--bg-color);
   background-attachment: fixed;
+  background-image: url(../images/cover-image-dark.png);
+  position: absolute;
+
 }
 
 header {
@@ -35,7 +37,6 @@ header {
   min-height: 768px;
   justify-content: flex-start;
   flex-direction: column;
-  margin: 0 0 60px 0;
 }
 
 .decorated-zone {
@@ -141,21 +142,19 @@ header {
   padding: 2vh 0 0 0;
 }
 
-.title_name {
+.heading_title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+ font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
   color: var(--col-or-h);
-}
-
-.heading_title {
   display: flex;
   align-items: flex-end;
   margin: 20vh 0 0 0;
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
+
 
 .shadow_text {
   text-shadow: 2px 1px 0 var(--shadow-color);
@@ -188,6 +187,7 @@ header {
   background: var(--bg-heading);
 }
 
+
 .decorate_sign {
   box-sizing: border-box;
   padding: 23px 0 1px 0px;
@@ -198,10 +198,7 @@ header {
   margin: 0px 0px 20px 20px;
 }
 
-main {
-  margin: auto;
-  width: var(--page-width);
-}
+
 
 .heading_title_section {
   font-family: var(--main-font);
@@ -224,7 +221,12 @@ main {
 }
 
 .decorated-zone_maine {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-color);
+  width: var(--page-width);
+  gap:80px;
+  padding-top: 60px;
 }
 
 .heading {
@@ -238,7 +240,7 @@ main {
   height: 23px;
 }
 
-.text_right_parent {
+.text_section_parent {
   width: 648.9175415039062px;
   height: 211px;
 }
@@ -264,15 +266,15 @@ main {
 
 .information_lots {
   display: grid;
-  margin: 73px 0 59px 0;
   width: 1024px;
-  height: 526px;
+  height: 498px;
+  gap:20px
 }
 
 .lots__heading_parent {
   width: 315px;
   height: 47px;
-  padding: 7px 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .cards {
@@ -299,7 +301,7 @@ main {
   line-height: 23.4px;
   letter-spacing: 0%;
   color: var(--txt-color-h);
-  margin: 3px 0 0 0;
+ 
 }
 
 .card__text {
@@ -412,12 +414,12 @@ main {
 
 .pictures {
   height: 100%;
-  padding: 40px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .heading_pictures {
   width: 984px;
-  margin: 40px 0 0 0vh;
+  margin: 0px 0 0 0vh;
 }
 
 .gallery {
@@ -488,40 +490,42 @@ main {
 }
 
 footer {
-  width: var(--page-width);
-  margin: auto;
-  display: flex;
-  min-height: 768px;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--bg-color);
-  block-size: 100vh;
+    display: grid;
+    grid-template-rows: 11vw 8vw 28vw;
+    grid-template-columns: 26vw 47vw 0vw;
+    gap: 0px 10px;
+    width: var(--page-width);
+    min-height: 799px;
+    height: 100vh;
+    background: var(--bg-color);
+
 }
 
 .decorate_sign_footer_up_parent {
   width: 27px;
   height: 0px;
-  margin: 2vh 0px 0px 125vh;
+  margin: 4vh 0px 0px 20vw;
+  grid-area: 1 / 4 / 3 / 5;
+
 }
 
 .heading_footer_parent {
-  display: flex;
-  flex-direction: column;
-  height: 89%;
-  justify-content: center;
+  height: 16.927vh;
   width: 471px;
+  margin: 0 0 0 0;
+  grid-area: 3 / 2 / 5 / 4;
+
 }
 
 .heading_footer {
-  padding-top: 11vh;
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 .decorate_sign_footer_parent {
   width: 27px;
   height: 0;
-  margin: 5vh 130vh 0 0;
+  margin: 24vw 0 0 0;
+  grid-area: 5 / 1 / 7 / 2;
+	
 }
 
