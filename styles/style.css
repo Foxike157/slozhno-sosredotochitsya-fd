@@ -26,8 +26,8 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-attachment: fixed;
-  background-color:var(--bg-color) ;
-  background-image: var(--bg-image),var(--bg-color);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image), var(--bg-color);
 }
 
 header {
@@ -42,7 +42,7 @@ header {
 .decorated-zone {
   background-size: cover;
   background-position: center;
-  background-image:var(--bg-image);
+  background-image: var(--bg-image);
 }
 
 .header__theme-menu-item {
@@ -146,7 +146,7 @@ header {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding: 2vh 0 0 0;
+  padding: 1vh 0 0 0;
 }
 
 .heading_title {
@@ -229,7 +229,7 @@ header {
   background: var(--bg-color);
   width: var(--page-width);
   gap: 80px;
-  padding-top:60px;
+  padding-top: 60px;
   padding-bottom: 53px;
 }
 
@@ -271,13 +271,12 @@ header {
 .information_lots {
   display: grid;
   width: 1024px;
-  height: 498px;
+
   gap: 20px;
 }
 
 .lots__heading_parent {
   width: 315px;
-  height: 47px;
   padding: 0 0 0 20px;
 }
 
@@ -286,9 +285,8 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   width: 984px;
-  height: 431px;
   gap: 20px;
-  padding: 0 0 11px 20px;
+  padding: 0 0 0px 20px;
 }
 
 .lots_card_right_task {
@@ -318,25 +316,21 @@ header {
 
 .card_one {
   width: 315px;
-  height: 384px;
   grid-row: span 5 / span 5;
 }
 
 .card_two {
   grid-row: span 5 / span 5;
   width: 315px;
-  height: 361px;
 }
 
 .card_three {
   width: 315px;
-  height: 431px;
   grid-row: span 5 / span 5;
 }
 
 .information_list_text_parent {
   width: 315px;
-  height: 98px;
 }
 
 .cards_part {
@@ -347,61 +341,52 @@ header {
 
 .heading_list_sky_parent {
   width: 649px;
-  height: 244px;
   grid-column: span 5 / span 5;
 }
 
 .text_sky_parent {
   width: 647.5520629882812px;
-  height: 211px;
 }
 
 .heading_list_music_parent {
   width: 649px;
-  height: 150px;
   grid-column: span 5 / span 5;
   grid-row-start: 2;
 }
 
 .text_music_parent {
   width: 649px;
-  height: 117px;
 }
 
 .heading_list_walk_parent {
   width: 649px;
-  height: 197px;
+
   grid-column: span 5 / span 5;
   grid-row-start: 3;
 }
 
 .text_walk_parent {
   width: 649px;
-  height: 197px;
 }
 
 .heading_list_good_parent {
   width: 649px;
-  height: 151px;
   grid-column: span 5 / span 5;
   grid-row-start: 4;
 }
 
 .text_good_parent {
   width: 649px;
-  height: 118px;
 }
 
 .heading_list_read_parent {
   width: 649px;
-  height: 150px;
   grid-column: span 5 / span 5;
   grid-row-start: 5;
 }
 
 .text_read_parent {
   width: 649px;
-  height: 117px;
 }
 
 .pictures {
