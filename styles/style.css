@@ -42,7 +42,7 @@ header {
 .decorated-zone {
   background-size: cover;
   background-position: center;
-  background-image: url(../images/cover-image-dark.png);
+  background-image:var(--bg-image);
 }
 
 .header__theme-menu-item {

@@ -30,9 +30,6 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme-light .rec {
-  display: none;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -46,17 +43,15 @@
     --col-or-h: #ffc2e6;
     --shadow-color: #ff8dcb;
     --border-color: #32312d66;
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   /* Остальные стили, только при необходимости */
 
-  .theme-auto .decorated-zone {
-    background-size: cover;
-    background-position: center;
-    background-image: url(../images/cover-image-light.png);
-  }
+.rec {
+  display: none;
+}
 
-  .theme-auto .rec {
-    display: none;
-  }
+
+
 }
