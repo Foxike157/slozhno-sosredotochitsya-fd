@@ -16,12 +16,11 @@
   --txt-color-h: #353430;
   --col-or-h: #ffc2e6;
   --shadow-color: #ff8dcb;
-  --border-color: #32312D66;
+  --border-color: #32312d66;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .theme-light .page {
-   background-image: url(../images/cover-image-light.png);
-
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
@@ -46,13 +45,10 @@
     --txt-color-h: #353430;
     --col-or-h: #ffc2e6;
     --shadow-color: #ff8dcb;
-    --border-color: #32312D66;
+    --border-color: #32312d66;
   }
 
   /* Остальные стили, только при необходимости */
-
-
-
 
   .theme-auto .decorated-zone {
     background-size: cover;

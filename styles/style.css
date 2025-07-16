@@ -12,7 +12,8 @@
   --txt-color-h: #000028;
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
-  --border-color: #FF007066;
+  --border-color: #ff007066;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .page {
@@ -25,7 +26,7 @@
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-attachment: fixed;
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   position: absolute;
 }
 
@@ -62,10 +63,6 @@ header {
   gap: 18px;
 }
 
-
-
-
-
 .header__theme-menu-button {
   font-family: var(--main-font);
   font-weight: 400;
@@ -75,7 +72,6 @@ header {
   background: none;
   border: none;
 }
-
 
 .header__theme-menu-button:default,
 .header__theme-menu-button_active {
@@ -87,20 +83,18 @@ header {
   text-decoration: none;
 }
 
-
 .header__theme-menu-button:active,
 .header__theme-menu-button:hover {
   border: 1px var(--border-color) solid;
- padding: 70 0;
+  padding: 70 0;
   height: 26px;
   width: 70px;
 }
 
 .header__theme-menu-button:focus,
 .header__theme-menu-button:focus-visible {
-text-decoration: underline var(--accent-color) solid;
+  text-decoration: underline var(--accent-color) solid;
 }
-
 
 .header-menu {
   display: flex;
@@ -169,7 +163,7 @@ text-decoration: underline var(--accent-color) solid;
 }
 
 .shadow_text {
- text-shadow: 1px 3px 0 var(--shadow-color);
+  text-shadow: 1px 3px 0 var(--shadow-color);
   text-decoration: none;
 }
 
@@ -492,7 +486,7 @@ footer {
   grid-template-columns: 26vw 47vw 0vw;
   gap: 0px 10px;
   width: var(--page-width);
-  min-height: 799px;
+  min-height: 800px;
   height: 100vh;
   background: var(--bg-color);
 }
