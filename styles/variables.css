@@ -155,14 +155,14 @@
     margin: 0;
   }
 
-  .card_one {
+  .card_multitasking {
     grid-column: span 5 / span 5;
     grid-row: span 2 / span 2;
     width: 728px;
     height: 174px;
   }
 
-  .card_two {
+  .card_food {
     grid-column: span 5 / span 5;
     grid-row: span 2 / span 2;
     grid-row-start: 3;
@@ -170,7 +170,7 @@
     height: 174px;
   }
 
-  .card_three {
+  .card_gadget {
     width: 728px;
     height: 197px;
     grid-column: span 5 / span 5;
@@ -419,7 +419,6 @@
   .information_list_text {
     width: 355px;
     height: 70px;
-    left: 10px;
     margin: 31px 0 0 10px;
   }
 
@@ -436,23 +435,23 @@
     height: 100%;
   }
 
-  .card_one,
-  .card_three {
+  .card_multitasking,
+  .card_gadget {
     width: 355px;
   }
 
-  .card_one {
+  .card_multitasking {
     height: 314px;
     width: 362px;
     margin: 0 0 0 0;
   }
 
-  .card_two {
+  .card_food {
     height: 314px;
     width: 362px;
   }
 
-  .card_three {
+  .card_gadget {
     height: 384px;
   }
 
@@ -461,17 +460,17 @@
     margin: 3vw 0 0 0;
   }
 
-  .сard__text_one {
+  .сard__text_multitasking {
     width: 355px;
     height: 281px;
   }
 
-  .сard__text_two {
+  .сard__text_food {
     width: 354.9990234375px;
     height: 281px;
   }
 
-  .сard__text_three {
+  .сard__text_gadget {
     width: 355px;
     height: 351px;
   }
@@ -560,21 +559,18 @@
   .heading_pictures {
     width: 354.9991760253906px;
     height: 24px;
-    left: 10px;
   }
 
   .sunset {
     width: 354.9991760253906px;
     height: 142px;
     top: 34px;
-    left: 10px;
   }
 
   .ice-scream {
     width: 354.9991760253906px;
     height: 355px;
-    top: 186px;
-    left: 10px;
+  
   }
 
   .books {
@@ -601,8 +597,6 @@
   .the_tape {
     width: 355px;
     height: 237px;
-    top: 551px;
-    left: 10px;
   }
 
   .image_books {
@@ -620,8 +614,6 @@
   .the_street {
     width: 354.9991760253906px;
     height: 237px;
-    top: 1163px;
-    left: 10px;
   }
 
   footer {

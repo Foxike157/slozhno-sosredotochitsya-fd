@@ -289,10 +289,6 @@ header {
   padding: 0 0 0px 20px;
 }
 
-.lots_card_right_task {
-  width: 315px;
-  height: 47px;
-}
 
 .card__title-name {
   flex-direction: row;
@@ -314,17 +310,17 @@ header {
   margin: 10px 0 0 0;
 }
 
-.card_one {
+.card_multitasking {
   width: 315px;
   grid-row: span 5 / span 5;
 }
 
-.card_two {
+.card_food {
   grid-row: span 5 / span 5;
   width: 315px;
 }
 
-.card_three {
+.card_gadget {
   width: 315px;
   grid-row: span 5 / span 5;
 }
