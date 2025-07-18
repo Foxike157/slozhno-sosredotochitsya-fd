@@ -1,8 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 :root {
-  /*размеры*/
-  --page-width: 1024px;
   /*оформление страницы */
   --main-font: "IBM Plex mono", sans-serif;
   --bg-color: #000028;
@@ -14,6 +12,7 @@
   --shadow-color: #ff0070;
   --border-color: #ff007066;
   --bg-image: url(../images/cover-image-dark.png);
+  overflow: auto;
 }
 
 .page {
@@ -22,7 +21,6 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  width: var(--page-width);
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-attachment: fixed;
@@ -31,12 +29,16 @@
 }
 
 header {
-  width: var(--page-width);
-  display: flex;
+
+  display: grid;
+  align-items: center;
+  align-content: space-between;
+  /*display: flex; 
+  justify-content: flex-start;
+  flex-direction: column;*/
   block-size: 100vh;
   min-height: 768px;
-  justify-content: flex-start;
-  flex-direction: column;
+ 
 }
 
 .decorated-zone {
@@ -55,7 +57,7 @@ header {
 .header__theme-menu {
   display: flex;
   justify-content: space-between;
-  margin: 18px 30vw 0 0;
+  margin: 2vi 29vi 0 0;
 }
 
 .header__theme-menu-list {
@@ -104,8 +106,7 @@ header {
 .parent_rec {
   display: flex;
   justify-content: flex-end;
-  width: 100px;
-  height: 26px;
+  inline-size: 10%;
 }
 
 .rec::after {
@@ -153,12 +154,12 @@ header {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   line-height: 83%;
   color: var(--col-or-h);
   display: flex;
   align-items: flex-end;
-  margin: 20vh 0 0 0;
+  margin: 17vi 0 0 0;
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
@@ -180,8 +181,9 @@ header {
 }
 
 .parent_header_text {
-  max-width: 491px;
-  margin: 0 0 90px 513px;
+  inline-size: 48%;
+  margin: 2vi 0 0 50vi;
+  height: auto;
 }
 
 .header_text {
@@ -214,13 +216,13 @@ header {
 .content-section {
   margin: auto;
   display: flex;
-  gap: 20px;
+  gap: 3vi;
   justify-content: center;
 }
 
+
 .information_text_parent {
-  width: 314.9599914550781px;
-  height: 47px;
+  inline-size: 31%;
 }
 
 .decorated-zone_maine {
@@ -229,8 +231,7 @@ header {
   background: var(--bg-color);
   width: var(--page-width);
   gap: 80px;
-  padding-top: 60px;
-  padding-bottom: 53px;
+ padding: 6vi 2vi 3vi 2vi;
 }
 
 .heading {
@@ -240,14 +241,10 @@ header {
   line-height: 23.4px;
   background: var(--bg-heading);
   color: var(--txt-color-h);
-  width: 649px;
   height: 23px;
 }
 
-.text_section_parent {
-  width: 648.9175415039062px;
-  height: 211px;
-}
+
 
 .content_paragraph {
   font-family: var(--main-font);
@@ -256,37 +253,30 @@ header {
   line-height: 23.4px;
   color: var(--text-color);
   margin: 10px 0 0 0;
+  inline-size: 100%;
 }
 
-.content_title {
-  margin: 13px 0 0 0;
-}
 
 .heading_parent {
-  width: 649px;
-  height: 20px;
+  height: 23px;
   background: var(--bg-heading);
 }
 
 .information_lots {
   display: grid;
-  width: 1024px;
-
   gap: 20px;
 }
 
 .lots__heading_parent {
-  width: 315px;
-  padding: 0 0 0 20px;
+  inline-size: 28%;
+
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  width: 984px;
-  gap: 20px;
-  padding: 0 0 0px 20px;
+  gap: 2%;
 }
 
 
@@ -299,6 +289,7 @@ header {
   line-height: 23.4px;
   letter-spacing: 0%;
   color: var(--txt-color-h);
+  height: 23px;
 }
 
 .card__text {
@@ -310,89 +301,33 @@ header {
   margin: 10px 0 0 0;
 }
 
-.card_multitasking {
-  width: 315px;
-  grid-row: span 5 / span 5;
-}
 
-.card_food {
-  grid-row: span 5 / span 5;
-  width: 315px;
-}
-
-.card_gadget {
-  width: 315px;
+.cards_lots { 
   grid-row: span 5 / span 5;
 }
 
 .information_list_text_parent {
-  width: 315px;
+  inline-size: 31%;
 }
 
 .cards_part {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-inline-size: 648.91796875px;
+  flex-wrap: nowrap;
 }
 
-.heading_list_sky_parent {
-  width: 649px;
-  grid-column: span 5 / span 5;
-}
-
-.text_sky_parent {
-  width: 647.5520629882812px;
-}
-
-.heading_list_music_parent {
-  width: 649px;
-  grid-column: span 5 / span 5;
-  grid-row-start: 2;
-}
-
-.text_music_parent {
-  width: 649px;
-}
-
-.heading_list_walk_parent {
-  width: 649px;
-
-  grid-column: span 5 / span 5;
-  grid-row-start: 3;
-}
-
-.text_walk_parent {
-  width: 649px;
-}
-
-.heading_list_good_parent {
-  width: 649px;
-  grid-column: span 5 / span 5;
-  grid-row-start: 4;
-}
-
-.text_good_parent {
-  width: 649px;
-}
-
-.heading_list_read_parent {
-  width: 649px;
-  grid-column: span 5 / span 5;
-  grid-row-start: 5;
-}
-
-.text_read_parent {
-  width: 649px;
+.heading_list {
+  inline-size: 100%;
 }
 
 .pictures {
-  height: 100%;
-  padding: 0px 20px 0 20px;
+
 }
 
 .heading_pictures {
-  width: 984px;
-  margin: 0px 0 0 0vh;
+  inline-size: 100%;
 }
 
 .gallery {
@@ -432,35 +367,25 @@ header {
   grid-row-start: 7;
 }
 
-.sunset {
-  display: block;
-  width: 650px;
-  height: 260px;
+
+.picture_image {
+  inline-size: 100%;
+  object-fit: contain;
 }
+
+
 
 .ice-scream {
-  width: 314px;
-  height: 595px;
   object-fit: cover;
-}
-
-.books {
-  width: 315px;
-  height: 315px;
-  object-fit: contain;
+    block-size: 99.5%;
 }
 
 .the_tape {
-  width: 315px;
-  height: 768px;
+block-size: 99.5%;
   object-fit: cover;
 }
 
-.the_street {
-  width: 649px;
-  height: 433px;
-  object-fit: contain;
-}
+
 
 footer {
   display: grid;
@@ -474,26 +399,22 @@ footer {
 }
 
 .decorate_sign_footer_up_parent {
-  width: 27px;
-  height: 0px;
-  margin: 0vh 0px 0px 20vw;
+  margin: 0 0 0 20vw;
   grid-area: 1 / 4 / 3 / 5;
 }
 
 .heading_footer_parent {
-  height: 16.927vh;
-  width: 471px;
+  inline-size: 100%;
   margin: 0 0 0 0;
   grid-area: 3 / 2 / 5 / 4;
 }
 
 .heading_footer {
-  text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
+  margin: 15vi 0 0 0;
 }
 
 .decorate_sign_footer_parent {
-  width: 27px;
-  height: 0;
-  margin: 24vw 0 0 0;
+ margin: 26vw 0 0 0;
   grid-area: 5 / 1 / 7 / 2;
 }

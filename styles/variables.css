@@ -3,10 +3,7 @@
   и их переопределение под различные устройства
 */
 
-
 :root {
-  /*размеры*/
-  --page-width: 1024px;
   /*оформление страницы */
   --main-font: "IBM Plex mono", sans-serif;
   --bg-color: #000028;
@@ -16,26 +13,19 @@
   --txt-color-h: #000028;
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
-  --border-color: #FF007066;
-  
+  --border-color: #ff007066;
 }
 
-
 /*планшет  устроиство */
-@media (width <=768px) {
-  .page {
-    width: 768px;
-  }
-
+@media (max-width: 768px) {
   .header {
     min-height: 1024px;
-    max-width: 100%;
   }
 
   .header__theme-menu {
     flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 16vh 2vh 0 0;
+    margin: 20vi 2vi 0 0;
   }
 
   .header__theme-menu-list {
@@ -49,16 +39,11 @@
   }
 
   .parent_rec {
-    margin: 4px 0px 0 664px;
-  }
-
-  .parent_heading {
-    margin: 0;
+    margin: 0.4rem 0 0 89vw;
   }
 
   .heading_title {
-    margin: 0 0 0 0;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin: 4vi 0 0 4vi;
   }
 
   .header-menu {
@@ -67,11 +52,11 @@
   }
 
   .rec {
-    margin: 14px 3px 0 0;
+    margin: 2vi 0.1rem 0 0;
   }
 
   .rec::after {
-    margin: 8px 0 0 42px;
+    margin: 0.4rem 0 0 2.8rem;
   }
 
   .decorate_sign_corner {
@@ -79,48 +64,28 @@
   }
 
   .decorated-zone_maine {
-    width: 768px;
-    padding-bottom: 50px;
+    padding: 8vi 0 3.5vh 0;
   }
 
   .parent_header_text {
-    margin: 0 0 124px 50%;
+    margin: 4vi 0 0 50vi;
   }
 
   .header_text {
-    padding: 0 50px 0 0;
-    width: 364px;
-    height: 117px;
-    margin: 0 0 13px 0;
-  }
-
-  .content-section {
-    width: 727px;
-    height: 100%;
-  }
-
-  .heading_parent {
-    width: 472px;
-    height: 23px;
+    inline-size: 98%;
+    margin: 0;
   }
 
   .content_title {
     margin: 11px 0 0 0;
   }
 
-  .heading {
-    width: 472px;
-    height: 23.92px;
-  }
-
-  .text_section_parent {
-    width: 472px;
-    height: 278px;
+  .cards_part {
+    inline-size: 61%;
   }
 
   .information_text_parent {
-    width: 236px;
-    height: 71px;
+    inline-size: 30%;
   }
 
   .information_list_text {
@@ -128,15 +93,12 @@
   }
 
   .information_lots {
-    width: 755px;
-    height: 100%;
-    padding-bottom: 3px;
+    margin: 0 0 0.6vi 0 ;
   }
 
   .lots__heading_parent {
-    width: 236px;
-    height: 70px;
-    padding-top: 4px;
+    inline-size: 30%;
+    padding: 0 0 0 3vi;
   }
 
   .lots__heading {
@@ -145,14 +107,22 @@
     padding: 4vh 0 0 2vh;
   }
 
+
+.card__text {
+  inline-size: 101%;
+} 
+
+
+
   .cards {
-    width: 755px;
-    height: 585px;
-    padding: 4px 0px 0 20px;
+    padding: 0 0 0 3vi;
+    display: flex;
+    gap: 20px 0px;
+    flex-direction: column;
+    inline-size: 97.5vi;
   }
 
   .card__title-name {
-    margin: 0;
   }
 
   .card_multitasking {
@@ -178,30 +148,11 @@
     grid-row-start: 5;
   }
 
-  .heading_list_sky_parent {
-    width: 472px;
-    height: 314px;
+
+  .heading_list {
+    
   }
 
-  .heading_list_music_parent {
-    width: 472px;
-    height: 198px;
-  }
-
-  .heading_list_walk_parent {
-    width: 472px;
-    height: 290px;
-  }
-
-  .heading_list_good_parent {
-    width: 472px;
-    height: 197px;
-  }
-
-  .heading_list_read_parent {
-    width: 472px;
-    height: 175px;
-  }
 
   .text_sky_parent {
     width: 472px;
@@ -229,37 +180,46 @@
   }
 
   .pictures {
-    width: 728px;
+ inline-size: 97%;
+    padding: 0 0 0 20px;
+  }
+
+
+  .gallery {
+    margin: 12px 0 0 0 ;
   }
 
   .heading_pictures {
-    width: 728px;
-    height: 23px;
+   
   }
 
+
+
   .sunset {
-    width: 479.00006103515625px;
-    height: 192px;
+  
+  }
+
+
+.image_books {
+margin: 0 0 0 0;
+}
+
+  .books {
+block-size: 100%;
   }
 
   .ice-scream {
-    width: 229px;
-    height: 442px;
-  }
-
-  .books {
-    width: 230.00001525878906px;
-    height: 230px;
+block-size: 100%;
+        inline-size: 101%;
   }
 
   .the_tape {
-    width: 229px;
-    height: 568px;
+  block-size: 99.2%;
+  inline-size: 100%;
   }
 
   .the_street {
-    width: 479px;
-    height: 318px;
+   
   }
 
   footer {
@@ -278,30 +238,23 @@
   }
 
   .decorate_sign_footer_parent {
-    margin: 34vh 0 0 0;
+    margin: 41vh 0 0 0;
   }
 
-  .heading_footer {
-   padding: 2vh 0 0 34px;
-  }
 
   .heading_footer_parent {
     margin: 9vh 0 0 5vw;
   }
 }
 
-@media (width <=375px) {
+@media (max-width: 375px) {
   .header {
     min-height: 668px;
-    width: 375px;
-  }
-
-  .page {
-    width: 375px;
   }
 
   .parent_rec {
-    margin: 0px 0px 4px 41vh;
+    margin: 0 0 0 72vi;
+    inline-size: 28%;
   }
 
   .decorate_sign_corner {
@@ -311,15 +264,13 @@
   .header__theme-menu {
     flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 4vh 0vh 0 0;
+    margin: 4vi 2vi 0 0;
   }
 
   .header__theme-menu-list {
-    width: 70px;
-    height: 98px;
-    margin: 20px 3px 0 0vh;
+    margin: 9vi 1vi 0 0;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
   }
 
   .header-menu {
@@ -328,43 +279,43 @@
   }
 
   .rec {
-    margin: 10px 4px 0 0px;
+    margin: 3vi 1vi 0 0px;
   }
 
   .rec::after {
-    margin: 8px 0 0 44px;
+    margin: 0.4rem 0 0 2.7rem;
   }
 
   .parent_heading {
-    width: 355px;
+    inline-size: 94%;
     height: 192px;
     margin: 0% 0 0 1%;
   }
 
   .heading_title {
-    padding: 0;
-    margin: 17vh 0 0 1vh;
+    margin: 18vi 0 0 1vi;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .parent_header_text {
-    margin: 22% 0 0vh 2%;
+    margin: 13vi 0 0vh 2vi;
   }
 
   .header_text {
-    width: 355px;
-    height: 117px;
-    margin: 36px 0 0 2px;
+    inline-size: 197%;
+    margin: 4vi 0 0 0.2rem;
   }
 
   .decorate_sign {
-    margin: 30px 0 0 10px;
+    margin: 0 0 3vi 3vi;
   }
 
   .content-section {
-    width: 97.333vw;
-    height: 100%;
     flex-direction: column;
-    margin: 0 0 0 0;
+    gap:5vi;
+  }
+
+  .card-section {
   }
 
   .content_title {
@@ -372,41 +323,20 @@
   }
 
   .information_text_parent {
-    width: 355px;
-    height: 47px;
+    inline-size: 80%;
   }
 
-  .heading_parent {
-    width: 355px;
-    height: 23px;
-  }
+  .cards_part {
 
-  .heading {
-    margin: 0;
-    padding: 0;
-    width: 355px;
-    height: 23px;
-  }
-
-  .heading_top {
-    height: 47px;
-  }
-
-  .text_section_parent {
-    width: 351.0270690917969px;
-    height: 398px;
+    inline-size: 100%;
   }
 
   .information_lots {
-    width: 355px;
-    height: 100%;
-    padding-bottom: 0;
   }
 
   .lots__heading_parent {
-    width: 355px;
+    inline-size: 97%;
     padding: 0;
-    height: 40px;
   }
 
   .lots__heading {
@@ -430,9 +360,8 @@
   .cards {
     display: flex;
     flex-direction: column;
-    padding: 7px 0 0 0 ;
-    width: 355px;
-    height: 100%;
+    padding: 0 0 0 0;
+    inline-size: 100%;
   }
 
   .card_multitasking,
@@ -456,29 +385,12 @@
   }
 
   .card__text {
-    line-height: 130%;
-    margin: 3vw 0 0 0;
-  }
-
-  .сard__text_multitasking {
-    width: 355px;
-    height: 281px;
-  }
-
-  .сard__text_food {
-    width: 354.9990234375px;
-    height: 281px;
-  }
-
-  .сard__text_gadget {
-    width: 355px;
-    height: 351px;
+    margin: 2.5vw 0 0 0;
+    inline-size: 99%;
   }
 
   .card__title-name {
-    width: 355px;
-    height: 24px;
-    margin: 0;
+    inline-size: 100%;
   }
 
   .heading_list_sky_parent {
@@ -535,15 +447,24 @@
     height: 187px;
   }
 
+.heading_top{
+  inline-size: 100%;
+height: 47px;
+
+
+}
+
   .content_paragraph {
-    margin: 10px 0 0 0;
+  
+    inline-size: 100%;
   }
+
 
   .pictures {
     display: flex;
     flex-direction: column;
-    width: 355px;
-    height: 1400px;
+    inline-size: 100%;
+    block-size: 209.581vh;
     padding: 0;
     gap: 10px;
   }
@@ -551,36 +472,23 @@
   .gallery {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
-    gap: 10px 0px;
+    gap: 6px 0px;
     margin: 0;
     height: 100%;
   }
 
   .heading_pictures {
-    width: 354.9991760253906px;
-    height: 24px;
+inline-size: 100%;
   }
 
-  .sunset {
-    width: 354.9991760253906px;
-    height: 142px;
-    top: 34px;
-  }
 
-  .ice-scream {
-    width: 354.9991760253906px;
-    height: 355px;
-  
-  }
-
-  .books {
-    width: 354.9991760253906px;
-    height: 355px;
-  }
+.picture_image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+}
 
   .image_sunset {
-    width: 354.9991760253906px;
-    height: 142px;
     grid-area: 1/1/2/2;
   }
 
@@ -589,32 +497,20 @@
   }
 
   .image_tape {
-    width: 355px;
-    height: 237px;
     grid-area: 3/1/4/2;
   }
 
-  .the_tape {
-    width: 355px;
-    height: 237px;
-  }
+ 
 
   .image_books {
-    width: 354.9991760253906px;
-    height: 355px;
     grid-area: 4/1/5/2;
   }
 
   .image_street {
-    width: 354.9991760253906px;
-    height: 237px;
+
     grid-area: 5/1/6/2;
   }
 
-  .the_street {
-    width: 354.9991760253906px;
-    height: 237px;
-  }
 
   footer {
     max-width: 375px;
@@ -638,21 +534,18 @@
   }
 
   .heading_footer_parent {
-    height: 14.371vh;
-    width: 348px;
     margin: 10vh 0% 0% 0;
     grid-area: 2 / 2 / 3 / 4;
   }
 
   .decorate_sign_footer_parent {
-    width: 40px;
-    margin: 23vh 0px 0 0;
+   
+    margin: 50vi 0 0 0;
     grid-area: 3/1/4/2;
   }
 
   .decorated-zone_maine {
-    width: 375px;
-    gap: 50px;
-    padding: 40px 0 40px 10px;
+    gap: 13.333vi;
+   padding: 11vi 0.63rem 6vi 0.63rem;
   }
 }
