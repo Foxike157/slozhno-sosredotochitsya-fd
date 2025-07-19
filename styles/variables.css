@@ -26,6 +26,7 @@
     flex-direction: column-reverse;
     align-items: flex-end;
     margin: 20vi 2vi 0 0;
+    inline-size: 99%;
   }
 
   .header__theme-menu-list {
@@ -43,12 +44,17 @@
   }
 
   .heading_title {
-    margin: 4vi 0 0 4vi;
+    margin: 3vi 0 0 0vi;
+    inline-size: 95%;
   }
+
+
+
 
   .header-menu {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
+    inline-size: 99%;
   }
 
   .rec {
@@ -58,6 +64,11 @@
   .rec::after {
     margin: 0.4rem 0 0 2.8rem;
   }
+
+
+.parent_heading {
+  inline-size: 94%;
+}
 
   .decorate_sign_corner {
     margin: 16px 16px 0 0;
@@ -72,7 +83,7 @@
   }
 
   .header_text {
-    inline-size: 98%;
+    inline-size: 99%;
     margin: 0;
   }
 
@@ -227,10 +238,19 @@ block-size: 100%;
     min-height: 1024px;
     grid-template-rows: 34vw 10vw 10vw;
     grid-template-columns: 16vw 10vw 54vw;
+    inline-size: 100%;
+    justify-content: center;
+  }
+
+
+  .heading_footer {
+    margin: 3vh 0 0 4vi;
+    inline-size: 86%;
   }
 
   .decorate_sign_footer_up_parent {
     margin: 1vw 0 0 10vw;
+    inline-size: 22%;
   }
 
   .decorate_sign {
@@ -244,6 +264,7 @@ block-size: 100%;
 
   .heading_footer_parent {
     margin: 9vh 0 0 5vw;
+    inline-size: 83%;
   }
 }
 
