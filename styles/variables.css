@@ -71,7 +71,7 @@
   }
 
   .decorated-zone_maine {
-    padding: 8vi 0 3.5vh 0;
+    padding: 8vi 0 5.5vh 0;
   }
 
   .parent_header_text {
@@ -211,12 +211,12 @@
   }
 
   .heading_footer {
-    margin: 3vh 0 0 4vi;
+    margin: 0 0 0 4vi;
     inline-size: 86%;
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 1vw 0 0 10vw;
+    margin: 0.8vw 0 0 10vw;
     inline-size: 22%;
   }
 
@@ -225,7 +225,7 @@
   }
 
   .decorate_sign_footer_parent {
-    margin: 41vh 0 0 0;
+    margin: 38vh 0 0 0;
   }
 
   .heading_footer_parent {
@@ -496,26 +496,28 @@
     padding: 0;
     line-height: 83%;
     margin: 0;
+    inline-size: 99%;
   }
 
   .decorate_sign_footer_up_parent {
-    margin: 0vh 0 0 52%;
+    margin: 0vh 0 0 129vi;
     width: 0px;
     grid-area: 1/4/2/5;
   }
 
   .heading_footer_parent {
-    margin: 10vh 0% 0% 0;
+    margin: 7vh 0% 0% 125vi;
     grid-area: 2 / 2 / 3 / 4;
+    inline-size: 112%;
   }
 
   .decorate_sign_footer_parent {
-    margin: 50vi 0 0 0;
+    margin: 49vi 0 0 126vi;
     grid-area: 3/1/4/2;
   }
 
   .decorated-zone_maine {
     gap: 13.333vi;
-    padding: 11vi 0.63rem 6vi 0.63rem;
+    padding: 11vi 0.63rem 11vi 0.63rem;
   }
 }

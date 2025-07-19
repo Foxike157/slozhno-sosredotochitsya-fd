@@ -30,6 +30,9 @@
   background-image: url(../images/cover-image-light.png);
 }
 
+.theme-light .rec {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -48,10 +51,9 @@
 
   /* Остальные стили, только при необходимости */
 
-.rec {
-  display: none;
-}
 
-
+  .rec {
+    display: none;
+  }
 
 }

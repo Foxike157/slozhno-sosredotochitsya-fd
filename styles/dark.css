@@ -24,18 +24,15 @@
 
 }
 
-.theme-dark .decorated-zone {
-  background-size: cover;
-  background-position: center;
-  background-image: url(../images/cover-image-dark.png);
+.theme-dark .rec {
+  display: flex;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Дублируем только те же переменные, что и выше */
 
-    
+
   }
 
 

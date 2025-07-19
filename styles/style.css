@@ -25,7 +25,7 @@
   font-family: var(--main-font);
   background-attachment: fixed;
   background-color: var(--bg-color);
-  background-image: var(--bg-image), var(--bg-color);
+  background-image: var(--bg-image, --bg-color);
 }
 
 header {
@@ -230,7 +230,7 @@ header {
   background: var(--bg-color);
   width: var(--page-width);
   gap: 80px;
-  padding: 6vi 2vi 3vi 2vi;
+  padding: 6vi 2vi 4.85vi 2vi;
 }
 
 .heading {
@@ -389,16 +389,18 @@ footer {
 .heading_footer_parent {
   inline-size: 100%;
   margin: 0 0 0 0;
+  padding: 4vi 0 0 0;
   grid-area: 3 / 2 / 5 / 4;
 }
 
 .heading_footer {
   text-shadow: 4px 4px 0 var(--shadow-color);
-  margin: 15vi 0 0 0;
+  margin: 11vi 0 0 0;
   inline-size: 100%;
 }
 
 .decorate_sign_footer_parent {
-  margin: 26vw 0 0 0;
+  block-size: 0;
+  margin: 32vh 0 0 0;
   grid-area: 5 / 1 / 7 / 2;
 }
