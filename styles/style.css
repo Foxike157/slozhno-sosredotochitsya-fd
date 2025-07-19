@@ -29,7 +29,6 @@
 }
 
 header {
-
   display: grid;
   align-items: center;
   align-content: space-between;
@@ -38,7 +37,6 @@ header {
   flex-direction: column;*/
   block-size: 100vh;
   min-height: 768px;
- 
 }
 
 .decorated-zone {
@@ -153,7 +151,7 @@ header {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
   color: var(--col-or-h);
   display: flex;
@@ -171,6 +169,7 @@ header {
 .shadow_text:hover {
   text-decoration: underline solid var(--text-color);
 }
+
 .shadow_text:default {
   text-decoration: none;
 }
@@ -221,7 +220,6 @@ header {
   justify-content: center;
 }
 
-
 .information_text_parent {
   inline-size: 31%;
 }
@@ -232,7 +230,7 @@ header {
   background: var(--bg-color);
   width: var(--page-width);
   gap: 80px;
- padding: 6vi 2vi 3vi 2vi;
+  padding: 6vi 2vi 3vi 2vi;
 }
 
 .heading {
@@ -245,8 +243,6 @@ header {
   height: 23px;
 }
 
-
-
 .content_paragraph {
   font-family: var(--main-font);
   font-weight: 400;
@@ -256,7 +252,6 @@ header {
   margin: 10px 0 0 0;
   inline-size: 100%;
 }
-
 
 .heading_parent {
   height: 23px;
@@ -270,7 +265,6 @@ header {
 
 .lots__heading_parent {
   inline-size: 28%;
-
 }
 
 .cards {
@@ -279,7 +273,6 @@ header {
   grid-template-rows: repeat(5, 1fr);
   gap: 2%;
 }
-
 
 .card__title-name {
   flex-direction: row;
@@ -300,8 +293,7 @@ header {
   margin: 10px 0 0 0;
 }
 
-
-.cards_lots { 
+.cards_lots {
   grid-row: span 5 / span 5;
 }
 
@@ -320,8 +312,6 @@ header {
 .heading_list {
   inline-size: 100%;
 }
-
-
 
 .heading_pictures {
   inline-size: 100%;
@@ -364,25 +354,20 @@ header {
   grid-row-start: 7;
 }
 
-
 .picture_image {
   inline-size: 100%;
   object-fit: contain;
 }
 
-
-
 .ice-scream {
   object-fit: cover;
-    block-size: 99.5%;
+  block-size: 99.5%;
 }
 
 .the_tape {
-block-size: 99.5%;
+  block-size: 99.5%;
   object-fit: cover;
 }
-
-
 
 footer {
   display: grid;
@@ -398,14 +383,13 @@ footer {
 .decorate_sign_footer_up_parent {
   margin: 0 0 0 20vw;
   grid-area: 1 / 4 / 3 / 5;
-  inline-size:12%;
+  inline-size: 12%;
 }
 
 .heading_footer_parent {
   inline-size: 100%;
   margin: 0 0 0 0;
   grid-area: 3 / 2 / 5 / 4;
-  
 }
 
 .heading_footer {
@@ -415,6 +399,6 @@ footer {
 }
 
 .decorate_sign_footer_parent {
- margin: 26vw 0 0 0;
+  margin: 26vw 0 0 0;
   grid-area: 5 / 1 / 7 / 2;
 }

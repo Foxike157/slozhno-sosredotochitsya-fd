@@ -48,9 +48,6 @@
     inline-size: 95%;
   }
 
-
-
-
   .header-menu {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
@@ -65,10 +62,9 @@
     margin: 0.4rem 0 0 2.8rem;
   }
 
-
-.parent_heading {
-  inline-size: 94%;
-}
+  .parent_heading {
+    inline-size: 94%;
+  }
 
   .decorate_sign_corner {
     margin: 16px 16px 0 0;
@@ -104,7 +100,7 @@
   }
 
   .information_lots {
-    margin: 0 0 0.6vi 0 ;
+    margin: 0 0 0.6vi 0;
   }
 
   .lots__heading_parent {
@@ -118,12 +114,9 @@
     padding: 4vh 0 0 2vh;
   }
 
-
-.card__text {
-  inline-size: 101%;
-} 
-
-
+  .card__text {
+    inline-size: 101%;
+  }
 
   .cards {
     padding: 0 0 0 3vi;
@@ -132,8 +125,6 @@
     flex-direction: column;
     inline-size: 97.5vi;
   }
-
-
 
   .card_multitasking {
     grid-column: span 5 / span 5;
@@ -157,10 +148,6 @@
     grid-row: span 2 / span 2;
     grid-row-start: 5;
   }
-
-
- 
-
 
   .text_sky_parent {
     width: 472px;
@@ -188,39 +175,31 @@
   }
 
   .pictures {
- inline-size: 97%;
+    inline-size: 97%;
     padding: 0 0 0 20px;
   }
 
-
   .gallery {
-    margin: 12px 0 0 0 ;
+    margin: 12px 0 0 0;
   }
 
-
-
-
-
-
-.image_books {
-margin: 0 0 0 0;
-}
+  .image_books {
+    margin: 0 0 0 0;
+  }
 
   .books {
-block-size: 100%;
+    block-size: 100%;
   }
 
   .ice-scream {
-block-size: 100%;
-        inline-size: 101%;
+    block-size: 100%;
+    inline-size: 101%;
   }
 
   .the_tape {
-  block-size: 99.2%;
-  inline-size: 100%;
+    block-size: 99.2%;
+    inline-size: 100%;
   }
-
-
 
   footer {
     width: 768px;
@@ -230,7 +209,6 @@ block-size: 100%;
     inline-size: 100%;
     justify-content: center;
   }
-
 
   .heading_footer {
     margin: 3vh 0 0 4vi;
@@ -249,7 +227,6 @@ block-size: 100%;
   .decorate_sign_footer_parent {
     margin: 41vh 0 0 0;
   }
-
 
   .heading_footer_parent {
     margin: 9vh 0 0 5vw;
@@ -304,7 +281,7 @@ block-size: 100%;
 
   .heading_title {
     margin: 18vi 0 0 1vi;
-    font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .parent_header_text {
@@ -322,10 +299,8 @@ block-size: 100%;
 
   .content-section {
     flex-direction: column;
-    gap:5vi;
+    gap: 5vi;
   }
-
-
 
   .content_title {
     margin: 8px 0 0px 0;
@@ -336,10 +311,8 @@ block-size: 100%;
   }
 
   .cards_part {
-
     inline-size: 100%;
   }
-
 
   .lots__heading_parent {
     inline-size: 97%;
@@ -454,18 +427,14 @@ block-size: 100%;
     height: 187px;
   }
 
-.heading_top{
-  inline-size: 100%;
-height: 47px;
-
-
-}
-
-  .content_paragraph {
-  
+  .heading_top {
     inline-size: 100%;
+    height: 47px;
   }
 
+  .content_paragraph {
+    inline-size: 100%;
+  }
 
   .pictures {
     display: flex;
@@ -485,15 +454,14 @@ height: 47px;
   }
 
   .heading_pictures {
-inline-size: 100%;
+    inline-size: 100%;
   }
 
-
-.picture_image {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: contain;
-}
+  .picture_image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: contain;
+  }
 
   .image_sunset {
     grid-area: 1/1/2/2;
@@ -507,17 +475,13 @@ inline-size: 100%;
     grid-area: 3/1/4/2;
   }
 
- 
-
   .image_books {
     grid-area: 4/1/5/2;
   }
 
   .image_street {
-
     grid-area: 5/1/6/2;
   }
-
 
   footer {
     max-width: 375px;
@@ -546,13 +510,12 @@ inline-size: 100%;
   }
 
   .decorate_sign_footer_parent {
-   
     margin: 50vi 0 0 0;
     grid-area: 3/1/4/2;
   }
 
   .decorated-zone_maine {
     gap: 13.333vi;
-   padding: 11vi 0.63rem 6vi 0.63rem;
+    padding: 11vi 0.63rem 6vi 0.63rem;
   }
 }
