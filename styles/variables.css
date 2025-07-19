@@ -133,8 +133,7 @@
     inline-size: 97.5vi;
   }
 
-  .card__title-name {
-  }
+
 
   .card_multitasking {
     grid-column: span 5 / span 5;
@@ -160,9 +159,7 @@
   }
 
 
-  .heading_list {
-    
-  }
+ 
 
 
   .text_sky_parent {
@@ -200,15 +197,9 @@
     margin: 12px 0 0 0 ;
   }
 
-  .heading_pictures {
-   
-  }
 
 
 
-  .sunset {
-  
-  }
 
 
 .image_books {
@@ -229,9 +220,7 @@ block-size: 100%;
   inline-size: 100%;
   }
 
-  .the_street {
-   
-  }
+
 
   footer {
     width: 768px;
@@ -315,7 +304,7 @@ block-size: 100%;
 
   .heading_title {
     margin: 18vi 0 0 1vi;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .parent_header_text {
@@ -336,8 +325,7 @@ block-size: 100%;
     gap:5vi;
   }
 
-  .card-section {
-  }
+
 
   .content_title {
     margin: 8px 0 0px 0;
@@ -352,8 +340,6 @@ block-size: 100%;
     inline-size: 100%;
   }
 
-  .information_lots {
-  }
 
   .lots__heading_parent {
     inline-size: 97%;

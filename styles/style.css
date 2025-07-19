@@ -79,7 +79,6 @@ header {
 .header__theme-menu-button_active {
   pointer-events: none;
   border: 1px var(--accent-color) solid;
-  padding: 70 0;
   height: 26px;
   width: 70px;
   text-decoration: none;
@@ -88,7 +87,6 @@ header {
 .header__theme-menu-button:active,
 .header__theme-menu-button:hover {
   border: 1px var(--border-color) solid;
-  padding: 70 0;
   height: 26px;
   width: 70px;
 }
@@ -162,6 +160,7 @@ header {
   align-items: flex-end;
   margin: 17vi 0 0 0;
   text-shadow: 4px 4px 0 var(--shadow-color);
+  inline-size: 100%;
 }
 
 .shadow_text {
@@ -289,7 +288,6 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
   color: var(--txt-color-h);
   height: 23px;
 }
@@ -299,7 +297,6 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
   margin: 10px 0 0 0;
 }
 
@@ -324,9 +321,7 @@ header {
   inline-size: 100%;
 }
 
-.pictures {
 
-}
 
 .heading_pictures {
   inline-size: 100%;
