@@ -202,7 +202,7 @@
   }
 
   footer {
-    width: 768px;
+    max-width: 768px;
     min-height: 1024px;
     grid-template-rows: 34vw 10vw 10vw;
     grid-template-columns: 16vw 10vw 54vw;
@@ -234,7 +234,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width:375px) {
   .header {
     min-height: 668px;
   }
@@ -299,7 +299,7 @@
 
   .content-section {
     flex-direction: column;
-    gap: 5vi;
+    gap: 20px;
   }
 
   .content_title {
@@ -333,8 +333,8 @@
   }
 
   .information_list_text_parent {
-    width: 355px;
-    height: 70px;
+    display: inline;
+    inline-size: 100%;
   }
 
   .cards {
@@ -506,13 +506,13 @@
   }
 
   .heading_footer_parent {
-    margin: 7vh 0% 0% 125vi;
+    margin: 7vh 0 0 126vi;
     grid-area: 2 / 2 / 3 / 4;
     inline-size: 112%;
   }
 
   .decorate_sign_footer_parent {
-    margin: 49vi 0 0 126vi;
+    margin: 50vi   0 0 126vi;
     grid-area: 3/1/4/2;
   }
 

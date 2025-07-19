@@ -26,6 +26,7 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   background-image: var(--bg-image, --bg-color);
+  z-index: -1;
 }
 
 header {
@@ -175,6 +176,10 @@ header {
 }
 
 .shadow_text:focus {
+  outline: none;
+}
+
+.shadow_text:focus-visible {
   border: 1px solid var(--text-color);
   text-decoration: none;
 }
@@ -271,7 +276,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 2%;
+  gap: 20px;
 }
 
 .card__title-name {
