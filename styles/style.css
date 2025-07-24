@@ -52,7 +52,7 @@ header {
 .decorated-zone::after {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -71,25 +71,24 @@ header {
   inset-block-end: 20px;
 }
 
-
+.rec {
+  position: relative;
+}
 
 .rec::before {
-  content: "rec";
   position: absolute;
-  inline-size: 33px;
-  block-size: 26px;
-  inset-inline-end: 48px;
-  inset-block-start: 20px;
+  content: "rec";
   text-transform: uppercase;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: var(--accent-color);
-  z-index: -1;
+  inset-inline-end: 48px;
+  inset-block-start: 20px;
 }
 
-.decorate_lamp::before {
+.rec::after {
   content: "";
   position: absolute;
   display: block;
@@ -156,6 +155,7 @@ header {
 .header-menu {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .parent_rec {
@@ -393,11 +393,12 @@ footer {
   min-height: 768px;
   block-size: 100vh;
   background: var(--bg-color);
+  z-index: 1;
 }
 
 .heading_footer {
   display: flex;
-align-items: center;
+  align-items: center;
   text-shadow: 4px 4px 0 var(--shadow-color);
   inline-size: 47%;
   margin: auto;

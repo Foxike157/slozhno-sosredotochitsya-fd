@@ -38,7 +38,6 @@
     gap: 13px;
   }
 
-
   .heading_title {
     margin: 21vi 0 0 0;
   }
@@ -66,7 +65,7 @@
   }
 
   .information_lots {
-    margin: 0 0 0.6vi 0;
+    margin: 0;
   }
 
   .lots__heading_parent {
@@ -159,15 +158,12 @@
   }
 
   footer {
-   min-height: 1024px;
+    min-height: 1024px;
   }
 
   .heading_footer {
     margin: 0;
-    
   }
-
- 
 
   .heading_footer_parent {
     margin: 9vh 0 0 5vw;
@@ -193,11 +189,10 @@
   }
 
   .header__theme-menu-list {
-    margin: 9vi 1vi 0 0;
+    margin: 7vi 1vi 0 0;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
   }
-
 
   .decorated-zone::before {
     inset-inline-end: 10px;
@@ -219,6 +214,11 @@
     inset-block-start: 10px;
   }
 
+  .rec::after {
+    inset-inline-end: 19px;
+    inset-block-start: 18px;
+  }
+
   .heading_title {
     margin: 16vi 0 0 2vi;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -228,7 +228,6 @@
     margin: 14vi 0 0 10px;
     inline-size: 95%;
   }
-
 
   .content-section {
     flex-direction: column;
@@ -371,7 +370,6 @@
     height: 100%;
   }
 
-
   .picture_image {
     block-size: 100%;
     object-fit: contain;
@@ -403,7 +401,8 @@
 
   .heading_footer {
     padding: 0;
-    margin: 0 0 0 4vi;
+    margin: 0;
+
   }
 
   .heading_footer_parent {
