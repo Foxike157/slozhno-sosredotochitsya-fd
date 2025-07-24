@@ -1,6 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 :root {
+  /*размеры*/
+  --maine-max-width: 1024px;
+  --maine-padding-x: 20px;
+  --maine-padding-y: 60px;
   /*оформление страницы */
   --main-font: "IBM Plex mono", sans-serif;
   --bg-color: #000028;
@@ -21,33 +25,87 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  max-width: var(--maine-max-width);
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font);
   background-attachment: fixed;
   background-color: var(--bg-color);
   background-image: var(--bg-image, --bg-color);
-  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 header {
-  display: grid;
-  align-items: center;
-  align-content: space-between;
-  /*display: flex; 
+  display: flex;
   justify-content: flex-start;
-  flex-direction: column;*/
+  flex-direction: column;
   block-size: 100vh;
   min-height: 768px;
 }
 
 .decorated-zone {
-  background-size: cover;
-  background-position: center;
-  background-image: var(--bg-image);
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-inline-start: 20px;
+  inset-block-end: 20px;
+}
+
+
+
+.rec::before {
+  content: "rec";
+  position: absolute;
+  inline-size: 33px;
+  block-size: 26px;
+  inset-inline-end: 48px;
+  inset-block-start: 20px;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--accent-color);
+  z-index: -1;
+}
+
+.decorate_lamp::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 9px;
+  background: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  inset-inline-end: 28px;
+  inset-block-start: 28px;
+  z-index: -1;
 }
 
 .header__theme-menu-item {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   gap: 10px;
   background: none;
@@ -56,7 +114,7 @@ header {
 .header__theme-menu {
   display: flex;
   justify-content: space-between;
-  margin: 2vi 29vi 0 0;
+  margin: 2vi 0 0 1vi;
 }
 
 .header__theme-menu-list {
@@ -97,69 +155,31 @@ header {
 
 .header-menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .parent_rec {
   display: flex;
   justify-content: flex-end;
-  inline-size: 10%;
-}
-
-.rec::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 9px;
-  height: 9px;
-  margin: 7px 0 0 43px;
-  border-radius: 9px;
-  background: var(--accent-color);
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-}
-
-.rec {
-  display: flex;
-  flex-direction: row;
-  text-transform: uppercase;
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 20px 4px 0 0;
-  color: var(--accent-color);
-}
-
-.decorate_sign_corner {
-  box-sizing: border-box;
-  width: 25px;
-  height: 25px;
-  border-top: 1px var(--accent-color) solid;
-  border-right: 1px var(--accent-color) solid;
-  margin: 20px 20px 0 0;
-}
-
-.parent_heading {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  padding: 1vh 0 0 0;
-  inline-size: 74%;
+  inline-size: 38%;
 }
 
 .heading_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vh 0 0 0;
+  inline-size: 100%;
+
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
+
   color: var(--col-or-h);
-  display: flex;
-  align-items: flex-end;
-  margin: 17vi 0 0 0;
+  margin: 26vi 0 0 0;
   text-shadow: 4px 4px 0 var(--shadow-color);
-  inline-size: 100%;
 }
 
 .shadow_text {
@@ -185,9 +205,9 @@ header {
 }
 
 .parent_header_text {
-  inline-size: 48%;
-  margin: 2vi 0 0 50vi;
+  margin: 11vi 2vi 0 50%;
   height: auto;
+  max-inline-size: 491px;
 }
 
 .header_text {
@@ -197,17 +217,6 @@ header {
   line-height: 23.4px;
   color: var(--txt-color-h);
   background: var(--bg-heading);
-  inline-size: 100%;
-}
-
-.decorate_sign {
-  box-sizing: border-box;
-  padding: 23px 0 1px 0px;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px var(--accent-color) solid;
-  border-left: 1px var(--accent-color) solid;
-  margin: 0px 0px 20px 20px;
 }
 
 .heading_title_section {
@@ -226,16 +235,19 @@ header {
 }
 
 .information_text_parent {
-  inline-size: 31%;
+  max-width: 314.9599914550781px;
 }
 
 .decorated-zone_maine {
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
-  width: var(--page-width);
-  gap: 80px;
-  padding: 6vi 2vi 4.85vi 2vi;
+  gap: 80px 0;
+  max-width: var(--maine-max-width);
+  padding-inline: var(--maine-padding-x);
+  padding-block-start: var(--maine-padding-y);
+  padding-block-end: var(--maine-padding-y);
+  margin-inline: auto;
 }
 
 .heading {
@@ -245,7 +257,6 @@ header {
   line-height: 23.4px;
   background: var(--bg-heading);
   color: var(--txt-color-h);
-  height: 23px;
 }
 
 .content_paragraph {
@@ -255,7 +266,6 @@ header {
   line-height: 23.4px;
   color: var(--text-color);
   margin: 10px 0 0 0;
-  inline-size: 100%;
 }
 
 .heading_parent {
@@ -264,7 +274,8 @@ header {
 }
 
 .information_lots {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -303,7 +314,7 @@ header {
 }
 
 .information_list_text_parent {
-  inline-size: 31%;
+  inline-size: 49%;
 }
 
 .cards_part {
@@ -357,10 +368,11 @@ header {
   grid-row: span 4 / span 4;
   grid-column-start: 2;
   grid-row-start: 7;
+  max-block-size: 433px;
 }
 
 .picture_image {
-  inline-size: 100%;
+  inline-size: 99%;
   object-fit: contain;
 }
 
@@ -375,37 +387,18 @@ header {
 }
 
 footer {
-  display: grid;
-  grid-template-rows: 8vw 8vw 28vw;
-  grid-template-columns: 26vw 47vw 0vw;
-  gap: 0px 10px;
-  width: var(--page-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 768px;
-  height: 100vh;
+  block-size: 100vh;
   background: var(--bg-color);
 }
 
-.decorate_sign_footer_up_parent {
-  margin: 0 0 0 20vw;
-  grid-area: 1 / 4 / 3 / 5;
-  inline-size: 12%;
-}
-
-.heading_footer_parent {
-  inline-size: 100%;
-  margin: 0 0 0 0;
-  padding: 4vi 0 0 0;
-  grid-area: 3 / 2 / 5 / 4;
-}
-
 .heading_footer {
+  display: flex;
+align-items: center;
   text-shadow: 4px 4px 0 var(--shadow-color);
-  margin: 11vi 0 0 0;
-  inline-size: 100%;
-}
-
-.decorate_sign_footer_parent {
-  block-size: 0;
-  margin: 32vh 0 0 0;
-  grid-area: 5 / 1 / 7 / 2;
+  inline-size: 47%;
+  margin: auto;
 }

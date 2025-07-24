@@ -17,20 +17,18 @@
   --col-or-h: #ffc2e6;
   --shadow-color: #ff8dcb;
   --border-color: #32312d66;
-  --bg-image: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-.theme-light .decorated-zone {
-  background-size: cover;
-  background-position: center;
-  background-image: url(../images/cover-image-light.png);
+.theme-light .rec {
+  display: none;
 }
 
-.theme-light .rec {
+.theme-light .decorate_lamp {
   display: none;
 }
 
@@ -51,9 +49,8 @@
 
   /* Остальные стили, только при необходимости */
 
-
+  .decorate_lamp,
   .rec {
     display: none;
   }
-
 }

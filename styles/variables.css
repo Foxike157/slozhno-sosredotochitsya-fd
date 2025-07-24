@@ -18,15 +18,18 @@
 
 /*планшет  устроиство */
 @media (max-width: 768px) {
+  :root {
+    --maine-max-width: 768px;
+  }
+
   .header {
     min-height: 1024px;
   }
 
   .header__theme-menu {
-    flex-direction: column-reverse;
-    align-items: flex-end;
-    margin: 20vi 2vi 0 0;
-    inline-size: 99%;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 26vi 3vi 0 0;
   }
 
   .header__theme-menu-list {
@@ -35,52 +38,19 @@
     gap: 13px;
   }
 
-  .header__theme-menu-item {
-    row-gap: 10px;
-  }
-
-  .parent_rec {
-    margin: 0.4rem 0 0 89vw;
-  }
 
   .heading_title {
-    margin: 3vi 0 0 0vi;
-    inline-size: 95%;
+    margin: 21vi 0 0 0;
   }
 
   .header-menu {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-    inline-size: 99%;
-  }
-
-  .rec {
-    margin: 2vi 0.1rem 0 0;
-  }
-
-  .rec::after {
-    margin: 0.4rem 0 0 2.8rem;
-  }
-
-  .parent_heading {
-    inline-size: 94%;
-  }
-
-  .decorate_sign_corner {
-    margin: 16px 16px 0 0;
-  }
-
-  .decorated-zone_maine {
-    padding: 8vi 0 5.5vh 0;
   }
 
   .parent_header_text {
-    margin: 4vi 0 0 50vi;
-  }
-
-  .header_text {
-    inline-size: 99%;
-    margin: 0;
+    margin-block-start: 21vi;
+    inline-size: 47%;
   }
 
   .content_title {
@@ -88,11 +58,7 @@
   }
 
   .cards_part {
-    inline-size: 61%;
-  }
-
-  .information_text_parent {
-    inline-size: 30%;
+    inline-size: 100%;
   }
 
   .information_list_text {
@@ -105,7 +71,6 @@
 
   .lots__heading_parent {
     inline-size: 30%;
-    padding: 0 0 0 3vi;
   }
 
   .lots__heading {
@@ -115,15 +80,12 @@
   }
 
   .card__text {
-    inline-size: 101%;
+    inline-size: 100%;
   }
 
   .cards {
-    padding: 0 0 0 3vi;
     display: flex;
-    gap: 20px 0px;
     flex-direction: column;
-    inline-size: 97.5vi;
   }
 
   .card_multitasking {
@@ -174,11 +136,6 @@
     height: 141px;
   }
 
-  .pictures {
-    inline-size: 97%;
-    padding: 0 0 0 20px;
-  }
-
   .gallery {
     margin: 12px 0 0 0;
   }
@@ -202,31 +159,15 @@
   }
 
   footer {
-    max-width: 768px;
-    min-height: 1024px;
-    grid-template-rows: 34vw 10vw 10vw;
-    grid-template-columns: 16vw 10vw 54vw;
-    inline-size: 100%;
-    justify-content: center;
+   min-height: 1024px;
   }
 
   .heading_footer {
-    margin: 0 0 0 4vi;
-    inline-size: 86%;
+    margin: 0;
+    
   }
 
-  .decorate_sign_footer_up_parent {
-    margin: 0.8vw 0 0 10vw;
-    inline-size: 22%;
-  }
-
-  .decorate_sign {
-    padding: 25px 0 0px 0px;
-  }
-
-  .decorate_sign_footer_parent {
-    margin: 38vh 0 0 0;
-  }
+ 
 
   .heading_footer_parent {
     margin: 9vh 0 0 5vw;
@@ -234,24 +175,21 @@
   }
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
+  :root {
+    --maine-padding-x: 10px;
+    --maine-padding-y: 40px;
+    --maine-max-width: 375px;
+  }
+
   .header {
     min-height: 668px;
-  }
-
-  .parent_rec {
-    margin: 0 0 0 72vi;
-    inline-size: 28%;
-  }
-
-  .decorate_sign_corner {
-    margin: 10px 10px 0 0;
   }
 
   .header__theme-menu {
     flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 4vi 2vi 0 0;
+    margin: 14vi 1vi 0 0;
   }
 
   .header__theme-menu-list {
@@ -260,42 +198,37 @@
     gap: 10px;
   }
 
-  .header-menu {
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
+
+  .decorated-zone::before {
+    inset-inline-end: 10px;
+    inset-block-start: 10px;
   }
 
-  .rec {
-    margin: 3vi 1vi 0 0px;
+  .decorated-zone::after {
+    inset-inline-start: 10px;
+    inset-block-end: 10px;
   }
 
-  .rec::after {
-    margin: 0.4rem 0 0 2.7rem;
+  .decorate_lamp::before {
+    inset-inline-end: 19px;
+    inset-block-start: 18px;
   }
 
-  .parent_heading {
-    inline-size: 94%;
-    height: 192px;
-    margin: 0% 0 0 1%;
+  .rec::before {
+    inset-inline-end: 38px;
+    inset-block-start: 10px;
   }
 
   .heading_title {
-    margin: 18vi 0 0 1vi;
+    margin: 16vi 0 0 2vi;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .parent_header_text {
-    margin: 13vi 0 0vh 2vi;
+    margin: 14vi 0 0 10px;
+    inline-size: 95%;
   }
 
-  .header_text {
-    inline-size: 197%;
-    margin: 4vi 0 0 0.2rem;
-  }
-
-  .decorate_sign {
-    margin: 0 0 3vi 3vi;
-  }
 
   .content-section {
     flex-direction: column;
@@ -304,14 +237,6 @@
 
   .content_title {
     margin: 8px 0 0px 0;
-  }
-
-  .information_text_parent {
-    inline-size: 80%;
-  }
-
-  .cards_part {
-    inline-size: 100%;
   }
 
   .lots__heading_parent {
@@ -338,9 +263,7 @@
   }
 
   .cards {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 0;
+    padding: 0;
     inline-size: 100%;
   }
 
@@ -366,7 +289,6 @@
 
   .card__text {
     margin: 2.5vw 0 0 0;
-    inline-size: 99%;
   }
 
   .card__title-name {
@@ -432,10 +354,6 @@
     height: 47px;
   }
 
-  .content_paragraph {
-    inline-size: 100%;
-  }
-
   .pictures {
     display: flex;
     flex-direction: column;
@@ -453,12 +371,8 @@
     height: 100%;
   }
 
-  .heading_pictures {
-    inline-size: 100%;
-  }
 
   .picture_image {
-    inline-size: 100%;
     block-size: 100%;
     object-fit: contain;
   }
@@ -484,25 +398,12 @@
   }
 
   footer {
-    max-width: 375px;
     min-height: 668px;
-    height: 100vh;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 15px 64vw 20vw);
-    gap: 0;
   }
 
   .heading_footer {
     padding: 0;
-    line-height: 83%;
-    margin: 0;
-    inline-size: 99%;
-  }
-
-  .decorate_sign_footer_up_parent {
-    margin: 0vh 0 0 129vi;
-    width: 0px;
-    grid-area: 1/4/2/5;
+    margin: 0 0 0 4vi;
   }
 
   .heading_footer_parent {
@@ -511,13 +412,10 @@
     inline-size: 112%;
   }
 
-  .decorate_sign_footer_parent {
-    margin: 50vi   0 0 126vi;
-    grid-area: 3/1/4/2;
-  }
-
   .decorated-zone_maine {
-    gap: 13.333vi;
-    padding: 11vi 0.63rem 11vi 0.63rem;
+    gap: 50px;
+    padding-inline: var(--maine-padding-x);
+    padding-block-start: var(--maine-padding-y);
+    padding-block-end: var(--maine-padding-y);
   }
 }

@@ -16,29 +16,26 @@
   --txt-color-h: #000028;
   --col-or-h: #db00ff;
   --shadow-color: #ff0070;
+  --border-color: #ff007066;
   --bg-image: url(../images/cover-image-dark.png);
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
 
+.theme-dark .decorate_lamp {
+  display: block;
 }
 
 .theme-dark .rec {
-  display: flex;
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Дублируем только те же переменные, что и выше */
-
-
   }
-
-
-
-
-
 
   /* Остальные стили, только при необходимости */
 }
