@@ -108,23 +108,21 @@ header {
   line-height: 18px;
   color: var(--accent-color);
   background: none;
- background-color: inherit;
+  background-color: inherit;
   border: none;
-   height: 26px;
+  height: 26px;
   width: 70px;
 }
-
 
 .header__theme-menu-button_active {
   pointer-events: none;
   border: 1px var(--accent-color) solid;
 }
 
-.header__theme-menu-button:default{
+.header__theme-menu-button:default {
   text-decoration: none;
   border: none;
 }
-
 
 .header__theme-menu-button:hover {
   border: 1px var(--border-color) solid;
@@ -264,12 +262,9 @@ header {
   inline-size: 100%;
 }
 
-
 .decorate-title {
   font-weight: 400;
 }
-
-
 
 .information_lots {
   display: flex;
@@ -285,12 +280,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-
 }
-
-
-
-
 
 .information_list_text_parent {
   inline-size: 32%;
@@ -439,9 +429,9 @@ footer {
     padding: 4vh 0 0 2vh;
   }
 
-.content_paragraph {
-  inline-size: 100%;
-}
+  .content_paragraph {
+    inline-size: 100%;
+  }
 
   .cards {
     display: flex;
@@ -560,7 +550,7 @@ footer {
     inline-size: 100%;
   }
 
- /* .card__title-name {
+  /* .card__title-name {
     inline-size: 100%;
   }*/
 
