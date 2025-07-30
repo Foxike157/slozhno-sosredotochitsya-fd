@@ -93,12 +93,12 @@ header {
 .header__theme-menu {
   display: flex;
   justify-content: space-between;
-  margin: 2vi 0 0 1vi;
+  margin: 2vi 0 0 0;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 18px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -114,12 +114,17 @@ header {
   width: 70px;
 }
 
-.header__theme-menu-button:default,
+
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu-button:default{
   text-decoration: none;
   border: none;
 }
+
 
 .header__theme-menu-button:hover {
   border: 1px var(--border-color) solid;
@@ -128,7 +133,7 @@ header {
 .header__theme-menu-button:focus,
 .header__theme-menu-button:focus-visible {
   border: none;
-  border-bottom: 1px var(--border-color) solid;
+  border-bottom: 1px var(--accent-color) solid;
 }
 
 .header-menu {
@@ -374,13 +379,13 @@ footer {
   .header__theme-menu {
     flex-direction: row-reverse;
     align-items: center;
-    margin: 26vi 3vi 0 0;
+    margin: 25vi 3vi 0 0;
   }
 
   .header__theme-menu-list {
     flex-direction: column;
     padding: 0;
-    gap: 13px;
+    gap: 10px;
   }
 
   .heading_title {
@@ -475,13 +480,13 @@ footer {
   .header__theme-menu {
     flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 14vi 0 0 0;
+    margin: 13vi 0 0 0;
   }
 
   .header__theme-menu-list {
-    margin: 7vi 1vi 0 0;
+    margin: 7vi 3vi 0 0;
     flex-direction: column;
-    gap: 13px;
+    gap: 10px;
   }
 
   .decorated-zone::before {
